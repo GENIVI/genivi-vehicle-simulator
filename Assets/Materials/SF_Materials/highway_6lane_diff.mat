@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: highway_6lane_diff
+  m_Shader: {fileID: 4800000, guid: 7c361804d2494164481018b0a7c717af, type: 3}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: abfa634cc99001e4b84be8683af642f7, type: 3}
+          m_Scale: {x: 1, y: 2}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BumpMap
+        second:
+          m_Texture: {fileID: 2800000, guid: 72077a6207982e24bbeb90ce49ba6bab, type: 3}
+          m_Scale: {x: 16, y: 16}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Shininess
+        second: .383553624
+      data:
+        first:
+          name: _Gloss
+        second: 2.42857146
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: .725490212, g: .725490212, b: .725490212, a: 1}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: .125490203, g: .125490203, b: .125490203, a: 1}
+      data:
+        first:
+          name: _WetColor
+        second: {r: .352941185, g: .352941185, b: .352941185, a: 1}
+      data:
+        first:
+          name: _WetSpecColor
+        second: {r: 1, g: 1, b: 1, a: 1}

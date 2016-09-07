@@ -1,0 +1,407 @@
+/*app css stylesheet*/
+.menu
+{
+    list-style: none;
+    margin-top: 0px;
+    padding-top: 28px;
+    margin-left: 132px;
+    margin-right: auto;
+}
+.menu > LI
+{
+    display: inline;
+    color: #FFFFFF;
+    padding-top: 10px;
+    margin-right: 37px;
+}
+
+
+
+.menu A
+{
+    color: #A2A7A8;
+    font-family: Helvetica;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu LI.reposition-button a {
+      position: absolute;
+        left: 32px;
+}
+
+.menu LI.selected A
+{
+    color: #FFFFFF;
+}
+#background
+{
+    background-image: url('images/background.png');
+    width: 1024px;
+    height: 750px;
+    margin: 0px;
+}
+
+#background.select {
+    background-image: url('images/selectbg.png');
+}
+
+BODY
+{
+    margin: 0px;
+    padding: 0px;
+}
+#vehicleSelect UL
+{
+    position: absolute;
+    width: 820px;
+    top: 122px;
+    left: 114px;
+    padding: 0;
+}
+#vehicleSelect UL LI
+{
+    display: block;
+    float: left;
+    padding: 0 0px 0 0;
+    margin: 0 70px 57px 0;
+    position: relative;
+}
+#vehicleSelect UL LI IMG
+{
+}
+#vehicleSelect UL LI .carName
+{
+    position: absolute;
+    width: 100%;
+    bottom: 3px;
+    left: 0px;
+    font-family: Helvetica;
+    font-size: 16px;
+    color: #A2A7A8;
+    text-align: center;
+    line-height: 16px;
+}
+
+#vehicleSelect h3 {
+    position: absolute;
+    top: 75px;
+    left: 45px;
+}
+
+#environmentSelect h3 {
+    position: absolute;
+    top: 500px;
+    left: 45px;
+}
+
+#environmentSelect UL
+{
+    position: absolute;
+    top: 539px;
+    left: 131px;
+    padding: 0;
+    width: 824px;
+}
+#environmentSelect UL LI
+{
+    display: block;
+    float: left;
+    padding: 0;
+    margin: 0 69px 0 0;
+    position: relative;
+}
+#environmentSelect .environmentName
+{
+    display: none;
+}
+
+.select-cancel {
+    width: 18px;
+    height: 18px;
+    background-image: url('images/Select/CarThumbs_Final_Cancel.png');
+    position: absolute;
+}
+
+.column {
+    margin-top: 50px;
+  padding-left: 20px;
+  float: left;
+  width: 236px;
+  height: 600px;
+}
+
+.column .spacer {
+  width: 220px;
+  height: 20px;
+}
+
+h3 {
+  color: #FFFFFF;
+  font-family: Helvetica;
+  font-weight: normal;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.wholeSlider {
+    margin-bottom:25px;
+}
+
+.wholeSlider .title {
+    margin: 0px;
+    position: absolute;
+    font-family: Helvetica;
+    color: #A2A7A8;
+}
+
+.column > .title, .column > .weather >.title  {
+      margin: 0px;
+   font-family: Helvetica;
+  color: #A2A7A8;
+}
+
+.wholeSlider .value {
+  margin: 0px;
+  position: absolute;
+  font-family: Helvetica;
+  color: #ffffff;
+  width: 245px;
+  text-align: center;
+}
+
+.maxVolume
+{
+    background-image: url('images/SpeakerMax.png');
+}
+
+.regularButton {
+  width: 220px;
+  height: 50px;
+  font-family: Helvetica;
+  background-color: rgba(0,0,0,0);
+  border: 1px solid rgba(113, 118, 112, 1);
+  color: rgba(113, 118, 112, 1);
+  margin-bottom: 15px;
+}
+
+.toggle {
+      width: 246px;
+  height: 50px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.toggle .toggle-title {
+  position: absolute;
+  top: 16px;
+  color: rgba(113, 118, 122, 1);
+  font-family: helvetica;
+  font-size: 15px;
+}
+
+.weather {
+    height: 65px;
+    margin-bottom:15px;
+    position:relative;
+
+}
+
+.weather > .bg {
+  width: 140px;
+  height: 5px;
+  position: absolute;
+  top: 33px;
+  left: 25px;
+  background-color: rgba(113, 118, 122, 1);
+}
+
+.map {
+    position:absolute;
+    top: 275px;
+    left:40px;
+}
+
+.map-container {
+    position:absolute;
+    top: 275px;
+    left:40px;
+}
+
+.map-indicator {
+    -ms-transform: translate(0px,0px); /* IE 9 */
+   	-webkit-transform: translate(0px,0px); /* Safari */
+    transform: translate(0px,0px);
+    background-image: url('images/Dot.png');
+    width: 13px;
+    height: 13px;
+}
+
+
+#selectInfractions h3 {
+      position: absolute;
+  left: 32px;
+  top: 97px;
+}
+
+table.infractions-list {
+  position: absolute;
+  left: 30px;
+  top: 159px;
+  font-family: helvetica;
+  font-size: 15px;
+}
+
+table.infractions-list thead{
+    color: #ffffff;
+}
+
+table.infractions-list tbody td {
+  padding-right: 20px;
+  height: 20px;
+  color: rgba(162, 167, 188,1);
+}
+
+table.infractions-list thead td {
+  padding-right: 20px;
+  height: 20px;
+}
+
+table.infractions-list tbody tr.selected td {
+  color: #fff;
+}
+
+.infractions-screenshot {
+    width: 499px;
+    height: 140px;
+    background-color: #fff;
+    position:absolute;
+    left:495px;
+    top: 159px;
+    margin:0;
+    padding:0;
+}
+
+.infractions-screenshot img {
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+table.infractions-detail {
+    position:absolute;
+    left:495px;
+    top:322px;
+    font-family: helvetica;
+    font-size: 15px;
+    color: rgba(162, 167, 188,1);
+}
+
+table.infractions-detail tr td:first-child {
+    width: 150px;
+}
+table.infractions-detail tr td {
+    height: 20px;
+}
+
+.tgl {
+  display: none;
+}
+.tgl, .tgl:after, .tgl:before, .tgl *, .tgl *:after, .tgl *:before, .tgl + .tgl-btn {
+  box-sizing: border-box;
+}
+.tgl::-moz-selection, .tgl:after::-moz-selection, .tgl:before::-moz-selection, .tgl *::-moz-selection, .tgl *:after::-moz-selection, .tgl *:before::-moz-selection, .tgl + .tgl-btn::-moz-selection {
+  background: none;
+}
+.tgl::selection, .tgl:after::selection, .tgl:before::selection, .tgl *::selection, .tgl *:after::selection, .tgl *:before::selection, .tgl + .tgl-btn::selection {
+  background: none;
+}
+.tgl + .tgl-btn {
+  outline: 0;
+  display: block;
+  width: 4em;
+  height: 2em;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+    
+          right: -150px;
+  top: 8px;
+}
+.tgl + .tgl-btn:after, .tgl + .tgl-btn:before {
+  position: relative;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+}
+.tgl + .tgl-btn:after {
+  left: 0;
+}
+.tgl + .tgl-btn:before {
+  display: none;
+}
+.tgl:checked + .tgl-btn:after {
+  left: 50%;
+}
+
+.tgl-light + .tgl-btn {
+  background: #000000;
+  border-radius: 2em;
+  padding: 2px;
+  -webkit-transition: all .4s ease;
+          transition: all .4s ease;
+}
+.tgl-light + .tgl-btn:after {
+  border-radius: 50%;
+  background: #fff;
+  -webkit-transition: all .2s ease;
+          transition: all .2s ease;
+}
+.tgl-light:checked + .tgl-btn {
+  background: #777;
+}
+
+
+input[type="radio"] {
+    display:none;
+}
+
+
+input[type="radio"] + label {
+    position: relative;
+  top: 30px;
+  width: 60px;
+  display: inline-block;
+    color: rgba(113, 118, 122, 1);
+  font-family: helvetica;
+  font-size: 15px;
+  text-align: center;
+}
+
+input[type="radio"]:checked + label {
+    color: #fff;
+}
+
+input[type="radio"] + label span {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  background-image: url('images/Dot_dimmed.png');
+  cursor: pointer;
+  position: absolute;
+  top: -20px;
+  left: 23px;
+  background-size: 100%;
+}
+input[type="radio"]:checked + label span {
+    background-image: url('images/Dot.png');
+}
+
+

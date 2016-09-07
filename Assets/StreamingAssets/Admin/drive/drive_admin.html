@@ -1,0 +1,41 @@
+<div class="column">
+
+    <h3>OBSTACLES</h3>
+    <div class="obstacles" ng-repeat="n in obstacles">
+        <button ng-click="ClickObstacle(n.id)" class="regularButton">{{n.title}}</button>
+    </div>
+</div>
+
+<div class="column">
+
+    <h3>WAYPOINTS</h3>
+    <div class="obstacles" ng-repeat="n in waypoints">
+        <button ng-click="ClickWaypoint(n.id)" class="regularButton">{{n.title}}</button>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="obstacles" ng-repeat="n in predefinedPaths">
+        <button ng-click="ClickPredefinedPath(n.id)" class="regularButton">{{n.title}}</button>
+    </div>
+</div>
+
+<div class="column">
+
+    <h3>TRAFFIC</h3>
+    <div class="toggle">
+        <span class="toggle-title">Enable/Disable</span>
+        <input ng-change="OnTrafficChange()" ng-model="$root.enableTraffic" class='tgl tgl-light' id='cb1' type='checkbox'>
+        <label class='tgl-btn' for='cb1'></label>
+    </div>
+</div>
+
+<div class="column">
+
+    <h3>AUTOPLAY</h3>
+    <div class="toggle">
+        <span class="toggle-title">Autoplay</span>
+        <input ng-change="OnAutoPlayChange()" ng-model="$root.enableAutoPlay" class='tgl tgl-light' id='cb2' type='checkbox'>
+        <label class='tgl-btn' for='cb2'></label>
+    </div>
+</div>

@@ -1,0 +1,127 @@
+fileFormatVersion: 2
+guid: c8ac257b147fa6a4889bdfdf8bdae09c
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Bottom
+    100002: BottomSide
+    100004: //RootNode
+    100006: Door
+    100008: FrontDoorHousing
+    100010: FrontDoorTop
+    100012: SideBeams
+    100014: SideHouse
+    100016: SideStairs
+    100018: Stairs
+    100020: TopRoof
+    100022: TopTower
+    100024: TopWindows
+    100026: Windows
+    400000: Bottom
+    400002: BottomSide
+    400004: //RootNode
+    400006: Door
+    400008: FrontDoorHousing
+    400010: FrontDoorTop
+    400012: SideBeams
+    400014: SideHouse
+    400016: SideStairs
+    400018: Stairs
+    400020: TopRoof
+    400022: TopTower
+    400024: TopWindows
+    400026: Windows
+    2300000: Bottom
+    2300002: BottomSide
+    2300004: Door
+    2300006: FrontDoorHousing
+    2300008: FrontDoorTop
+    2300010: SideBeams
+    2300012: SideHouse
+    2300014: SideStairs
+    2300016: Stairs
+    2300018: TopRoof
+    2300020: TopTower
+    2300022: TopWindows
+    2300024: Windows
+    3300000: Bottom
+    3300002: BottomSide
+    3300004: Door
+    3300006: FrontDoorHousing
+    3300008: FrontDoorTop
+    3300010: SideBeams
+    3300012: SideHouse
+    3300014: SideStairs
+    3300016: Stairs
+    3300018: TopRoof
+    3300020: TopTower
+    3300022: TopWindows
+    3300024: Windows
+    4300000: TopTower
+    4300002: SideHouse
+    4300004: BottomSide
+    4300006: FrontDoorTop
+    4300008: FrontDoorHousing
+    4300010: TopRoof
+    4300012: Bottom
+    4300014: Windows
+    4300016: SideBeams
+    4300018: Door
+    4300020: TopWindows
+    4300022: Stairs
+    4300024: SideStairs
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

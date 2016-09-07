@@ -1,0 +1,11 @@
+<div id="selectAudio" class="column">
+
+	<h3>AUDIO</h3>
+	<div class="sliders" ng-repeat="n in sliders">
+	<div class="wholeSlider">
+	<div class="title">{{n.title}}</div>
+	<div class="value">{{n.value}}</div>
+	<slider class="audio" floor="0" width="200" ceiling="1" step="0.02" precision="2" ng-model="n.value"></slider>
+	</div>
+	</div>
+</div>

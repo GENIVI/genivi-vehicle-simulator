@@ -1,0 +1,142 @@
+fileFormatVersion: 2
+guid: c9d4c0f88bfdda54a9d2c361fdfdb814
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Rock01
+    100002: Rock02
+    100004: Rock03
+    100006: Rock04
+    100008: Rock05
+    100010: Rock06
+    100012: Rock07
+    100014: Rock08
+    100016: Rock09
+    100018: Rock10
+    100020: Rock11
+    100022: Rock12
+    100024: Rock13
+    100026: Rock14
+    100028: Rock15
+    100030: Rock16
+    100032: //RootNode
+    400000: Rock01
+    400002: Rock02
+    400004: Rock03
+    400006: Rock04
+    400008: Rock05
+    400010: Rock06
+    400012: Rock07
+    400014: Rock08
+    400016: Rock09
+    400018: Rock10
+    400020: Rock11
+    400022: Rock12
+    400024: Rock13
+    400026: Rock14
+    400028: Rock15
+    400030: Rock16
+    400032: //RootNode
+    2300000: Rock01
+    2300002: Rock02
+    2300004: Rock03
+    2300006: Rock04
+    2300008: Rock05
+    2300010: Rock06
+    2300012: Rock07
+    2300014: Rock08
+    2300016: Rock09
+    2300018: Rock10
+    2300020: Rock11
+    2300022: Rock12
+    2300024: Rock13
+    2300026: Rock14
+    2300028: Rock15
+    2300030: Rock16
+    3300000: Rock01
+    3300002: Rock02
+    3300004: Rock03
+    3300006: Rock04
+    3300008: Rock05
+    3300010: Rock06
+    3300012: Rock07
+    3300014: Rock08
+    3300016: Rock09
+    3300018: Rock10
+    3300020: Rock11
+    3300022: Rock12
+    3300024: Rock13
+    3300026: Rock14
+    3300028: Rock15
+    3300030: Rock16
+    4300000: Rock01
+    4300002: Rock02
+    4300004: Rock03
+    4300006: Rock04
+    4300008: Rock05
+    4300010: Rock06
+    4300012: Rock07
+    4300014: Rock08
+    4300016: Rock09
+    4300018: Rock10
+    4300020: Rock11
+    4300022: Rock12
+    4300024: Rock13
+    4300026: Rock14
+    4300028: Rock15
+    4300030: Rock16
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .0125000002
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 40
+    splitTangentsAcrossUV: 1
+    normalImportMode: 1
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

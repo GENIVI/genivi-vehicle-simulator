@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="myApp" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Driving Sim Admin</title>
+   <meta name="apple-mobile-web-app-capable" content="yes">
+   <meta name="apple-mobile-web-app-status-bar-style" content="black">
+   <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=1024, user-scalable=0" />
+  
+  <link rel="apple-touch-icon-precomposed" href="images/webapp-assets/apple-touch-icon-precomposed-57x57.png" sizes="57x57" />
+  <link rel="apple-touch-icon-precomposed" href="images/webapp-assets/apple-touch-icon-precomposed-76x76.png" sizes="76x76" />
+  <link rel="apple-touch-icon-precomposed" href="images/webapp-assets/apple-touch-icon-precomposed-114x114.png" sizes="114x114" />
+  <link rel="apple-touch-icon-precomposed" href="images/webapp-assets/apple-touch-icon-precomposed-120x120.png" sizes="120x120" />
+  <link rel="apple-touch-icon-precomposed" href="images/webapp-assets/apple-touch-icon-precomposed-144x144.png" sizes="144x144" />
+  <link rel="apple-touch-icon-precomposed" href="images/webapp-assets/apple-touch-icon-precomposed-152x152.png" sizes="152x152" />
+  <link rel="apple-touch-icon-precomposed" href="images/webapp-assets/apple-touch-icon-precomposed-167x167.png" sizes="167x167" />
+  <link rel="apple-touch-icon-precomposed" href="images/webapp-assets/apple-touch-icon-precomposed-180x180.png" sizes="180x180" />
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="components/slider.css">
+</head>
+<body>
+<div id="background" ng-class="$root.bgtype">
+  <div ng-controller="RootController"></div>
+  <ul ng-if="!$root.drive"class="menu">
+    <li ng-class="{selected : $route.current.activetab == 'select_select'}"><a href="#/select_select">VEHICLE & SCENE SELECT</a></li>
+    <li ng-class="{selected : $route.current.activetab == 'select_additional'}"><a href="#/select_additional">ADDITIONAL CONTROLS</a></li>
+    <li ng-class="{selected : $route.current.activetab == 'select_infractions'}"><a href="#/select_infractions">INFRACTIONS</a></li>
+  </ul>
+    <ul ng-if="$root.drive" class="menu">
+        <li class="reposition-button"><a ng-click="$root.RepositionVehicle()">REPOSITION</a></li>
+        <li ng-class="{selected : $route.current.activetab == 'drive_admin'}"><a href="#/drive_admin">ADMIN</a></li>
+        <li ng-class="{selected : $route.current.activetab == 'drive_weather'}"><a href="#/drive_weather">WEATHER &amp; CAMERA</a></li>
+        <li ng-class="{selected : $route.current.activetab == 'drive_map'}"><a href="#/drive_map">MAP</a></li>
+        <li ng-class="{selected : $route.current.activetab == 'drive_audio'}"><a href="#/drive_audio">AUDIO</a></li>
+        <li ng-class="{selected : $route.current.activetab == 'drive_endscene'}"><a href="#/drive_endscene">END SCENE</a></li>
+    </ul>
+  <div ng-view></div>
+</div>
+  <script type="text/javascript" src="Js/angular.min.javascript"></script>
+  <script type="text/javascript" src="Js/angular-route.min.javascript"></script>
+  <script type="text/javascript" src="app.javascript"></script>
+  <script type="text/javascript" src="view1/view1.javascript"></script>
+  <script type="text/javascript" src="view2/view2.javascript"></script>
+   <script type="text/javascript" src="drive/drive_admin.javascript"></script>
+    <script type="text/javascript" src="infractions/select_infractions.javascript"></script>
+   <script type="text/javascript" src="components/slider.javascript"></script>
+</body>
+</html>

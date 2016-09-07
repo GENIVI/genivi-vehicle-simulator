@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Car_glassopaque
+  m_Shader: {fileID: 22, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: 2000
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 0.01, y: 0.01}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Cube
+        second:
+          m_Texture: {fileID: 8900000, guid: 81f8c3590fe0fb04dbbfb6448f9a827d, type: 2}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _SparkleTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Reflection
+        second: 0.035714272
+      data:
+        first:
+          name: _Shininess
+        second: 6.0413384
+      data:
+        first:
+          name: _Gloss
+        second: 1.0714285
+      data:
+        first:
+          name: _FrezPow
+        second: 0.35714287
+      data:
+        first:
+          name: _FrezFalloff
+        second: 4.1785717
+      data:
+        first:
+          name: _FlakeScale
+        second: 1
+      data:
+        first:
+          name: _FlakePower
+        second: 0
+      data:
+        first:
+          name: _InterFlakePower
+        second: 128
+      data:
+        first:
+          name: _OuterFlakePower
+        second: 2
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 0.58823526, g: 0.58823526, b: 0.58823526, a: 1}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: 0.45588237, g: 0.45588237, b: 0.45588237, a: 1}
+      data:
+        first:
+          name: _ReflectColor
+        second: {r: 0.09200265, g: 0.0981965, b: 0.104477584, a: 0.54901963}
+      data:
+        first:
+          name: _paintColor2
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _flakeLayerColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1002 &2100001
+EditorExtensionImpl:
+  serializedVersion: 6

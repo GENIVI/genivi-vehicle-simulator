@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Stop
+  - TrafficCar
+  - Obstacle
+  - StopTrigger
+  - Road
+  - Sign
+  - Terrain
+  - Tree
+  - Rock
+  - ParkedCar
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Traffic
+  - selectUI
+  - PlayerCar
+  - CloseCulling
+  - obstacle
+  - SelectScene
+  - BridgeRoad
+  - Environment
+  - EnvironmentProp
+  - Signage
+  - Roads
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - cookiebuilder
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

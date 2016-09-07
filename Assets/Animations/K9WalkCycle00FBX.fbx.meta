@@ -1,0 +1,441 @@
+fileFormatVersion: 2
+guid: c16a82c82fbf143e09dfd506a9bc9e9d
+timeCreated: 1460394581
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Back1
+    100002: Back2
+    100004: Breathing
+    100006: Chest
+    100008: CollarboneRoot
+    100010: GroundCenterNull
+    100012: Head
+    100014: HeadLookSensor
+    100016: Jaw1
+    100018: Jaw2
+    100020: K9IKZ+Mesh
+    100022: //RootNode
+    100024: L_Ankle
+    100026: L_Breath
+    100028: L_BreathTip
+    100030: L_Collarbone
+    100032: L_Ear
+    100034: L_Ear1
+    100036: L_Ear2
+    100038: L_Ear3
+    100040: L_Elbow
+    100042: L_Eyeball
+    100044: L_Eyebrow
+    100046: L_EyebrowRoot
+    100048: L_FrontPaw
+    100050: L_FrontPawTip
+    100052: L_Hip
+    100054: L_HipRoot
+    100056: L_Knee
+    100058: L_LipCorner
+    100060: L_LipCornerRoot
+    100062: L_Pelvis
+    100064: L_RearPaw
+    100066: L_RearPawTip
+    100068: L_Shoulder
+    100070: L_ShoulderRoot
+    100072: L_Wrist
+    100074: Neck1
+    100076: Neck2
+    100078: Neck3
+    100080: Null
+    100082: PelvicRoot
+    100084: PelvicRootNull
+    100086: R_Ankle
+    100088: R_Breath
+    100090: R_BreathTip
+    100092: R_Collarbone
+    100094: R_Ear
+    100096: R_Ear1
+    100098: R_Ear2
+    100100: R_Ear3
+    100102: R_Elbow
+    100104: R_Eyeball
+    100106: R_Eyebrow
+    100108: R_EyebrowRoot
+    100110: R_FrontPaw
+    100112: R_FrontPawTip
+    100114: R_Hip
+    100116: R_HipRoot
+    100118: R_Knee
+    100120: R_LipCorner
+    100122: R_LipCornerRoot
+    100124: R_Pelvis
+    100126: R_RearPaw
+    100128: R_RearPawTip
+    100130: R_Shoulder
+    100132: R_ShoulderRoot
+    100134: R_Wrist
+    100136: SnoutTip
+    100138: Tail
+    100140: Tail1
+    100142: Tail2
+    100144: Tail3
+    100146: Tail4
+    100148: Tail5
+    100150: Tail6
+    100152: TailRoot
+    100154: TailTip
+    100156: Tongue1
+    100158: Tongue2
+    100160: Tongue3
+    100162: Tongue4
+    100164: Tongue5
+    400000: Back1
+    400002: Back2
+    400004: Breathing
+    400006: Chest
+    400008: CollarboneRoot
+    400010: GroundCenterNull
+    400012: Head
+    400014: HeadLookSensor
+    400016: Jaw1
+    400018: Jaw2
+    400020: K9IKZ+Mesh
+    400022: //RootNode
+    400024: L_Ankle
+    400026: L_Breath
+    400028: L_BreathTip
+    400030: L_Collarbone
+    400032: L_Ear
+    400034: L_Ear1
+    400036: L_Ear2
+    400038: L_Ear3
+    400040: L_Elbow
+    400042: L_Eyeball
+    400044: L_Eyebrow
+    400046: L_EyebrowRoot
+    400048: L_FrontPaw
+    400050: L_FrontPawTip
+    400052: L_Hip
+    400054: L_HipRoot
+    400056: L_Knee
+    400058: L_LipCorner
+    400060: L_LipCornerRoot
+    400062: L_Pelvis
+    400064: L_RearPaw
+    400066: L_RearPawTip
+    400068: L_Shoulder
+    400070: L_ShoulderRoot
+    400072: L_Wrist
+    400074: Neck1
+    400076: Neck2
+    400078: Neck3
+    400080: Null
+    400082: PelvicRoot
+    400084: PelvicRootNull
+    400086: R_Ankle
+    400088: R_Breath
+    400090: R_BreathTip
+    400092: R_Collarbone
+    400094: R_Ear
+    400096: R_Ear1
+    400098: R_Ear2
+    400100: R_Ear3
+    400102: R_Elbow
+    400104: R_Eyeball
+    400106: R_Eyebrow
+    400108: R_EyebrowRoot
+    400110: R_FrontPaw
+    400112: R_FrontPawTip
+    400114: R_Hip
+    400116: R_HipRoot
+    400118: R_Knee
+    400120: R_LipCorner
+    400122: R_LipCornerRoot
+    400124: R_Pelvis
+    400126: R_RearPaw
+    400128: R_RearPawTip
+    400130: R_Shoulder
+    400132: R_ShoulderRoot
+    400134: R_Wrist
+    400136: SnoutTip
+    400138: Tail
+    400140: Tail1
+    400142: Tail2
+    400144: Tail3
+    400146: Tail4
+    400148: Tail5
+    400150: Tail6
+    400152: TailRoot
+    400154: TailTip
+    400156: Tongue1
+    400158: Tongue2
+    400160: Tongue3
+    400162: Tongue4
+    400164: Tongue5
+    2300000: L_Eyeball
+    2300002: R_Eyeball
+    3300000: L_Eyeball
+    3300002: R_Eyeball
+    4300000: L_Eyeball
+    4300002: R_Eyeball
+    4300004: K9IKZ+Mesh
+    7400000: K9Walk
+    9500000: //RootNode
+    13700000: K9IKZ+Mesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: K9Walk
+      takeName: C4D Animation Take
+      firstFrame: 0
+      lastFrame: 33
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: K9IKZ+Mesh
+        weight: 1
+      - path: K9IKZ+Mesh/GroundCenterNull
+        weight: 1
+      - path: K9IKZ+Mesh/Null
+        weight: 1
+      - path: PelvicRootNull
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/Breathing
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/Breathing/L_Breath
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/Breathing/L_Breath/L_BreathTip
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/Breathing/R_Breath
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/Breathing/R_Breath/R_BreathTip
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/CollarboneRoot
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/CollarboneRoot/L_Collarbone
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/CollarboneRoot/L_Collarbone/L_ShoulderRoot
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/CollarboneRoot/L_Collarbone/L_ShoulderRoot/L_Shoulder
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/CollarboneRoot/L_Collarbone/L_ShoulderRoot/L_Shoulder/L_Elbow
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/CollarboneRoot/L_Collarbone/L_ShoulderRoot/L_Shoulder/L_Elbow/L_Wrist
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/CollarboneRoot/L_Collarbone/L_ShoulderRoot/L_Shoulder/L_Elbow/L_Wrist/L_FrontPaw
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/CollarboneRoot/L_Collarbone/L_ShoulderRoot/L_Shoulder/L_Elbow/L_Wrist/L_FrontPaw/L_FrontPawTip
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/CollarboneRoot/R_Collarbone
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/CollarboneRoot/R_Collarbone/R_ShoulderRoot
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/CollarboneRoot/R_Collarbone/R_ShoulderRoot/R_Shoulder
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/CollarboneRoot/R_Collarbone/R_ShoulderRoot/R_Shoulder/R_Elbow
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/CollarboneRoot/R_Collarbone/R_ShoulderRoot/R_Shoulder/R_Elbow/R_Wrist
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/CollarboneRoot/R_Collarbone/R_ShoulderRoot/R_Shoulder/R_Elbow/R_Wrist/R_FrontPaw
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/CollarboneRoot/R_Collarbone/R_ShoulderRoot/R_Shoulder/R_Elbow/R_Wrist/R_FrontPaw/R_FrontPawTip
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/Neck1
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/Neck1/Neck2
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/Neck1/Neck2/Neck3
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/Neck1/Neck2/Neck3/Head
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/Neck1/Neck2/Neck3/Head/Jaw1
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/Neck1/Neck2/Neck3/Head/Jaw1/Jaw2
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/Neck1/Neck2/Neck3/Head/Jaw1/Tongue1
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/Neck1/Neck2/Neck3/Head/Jaw1/Tongue1/Tongue2
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/Neck1/Neck2/Neck3/Head/Jaw1/Tongue1/Tongue2/Tongue3
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/Neck1/Neck2/Neck3/Head/Jaw1/Tongue1/Tongue2/Tongue3/Tongue4
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/Neck1/Neck2/Neck3/Head/Jaw1/Tongue1/Tongue2/Tongue3/Tongue4/Tongue5
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/Neck1/Neck2/Neck3/Head/L_Ear
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/Neck1/Neck2/Neck3/Head/L_Ear/L_Ear1
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/Neck1/Neck2/Neck3/Head/L_Ear/L_Ear1/L_Ear2
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/Neck1/Neck2/Neck3/Head/L_Ear/L_Ear1/L_Ear2/L_Ear3
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/Neck1/Neck2/Neck3/Head/L_Eyeball
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/Neck1/Neck2/Neck3/Head/L_EyebrowRoot
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/Neck1/Neck2/Neck3/Head/L_EyebrowRoot/L_Eyebrow
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/Neck1/Neck2/Neck3/Head/L_LipCornerRoot
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/Neck1/Neck2/Neck3/Head/L_LipCornerRoot/L_LipCorner
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/Neck1/Neck2/Neck3/Head/R_Ear
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/Neck1/Neck2/Neck3/Head/R_Ear/R_Ear1
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/Neck1/Neck2/Neck3/Head/R_Ear/R_Ear1/R_Ear2
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/Neck1/Neck2/Neck3/Head/R_Ear/R_Ear1/R_Ear2/R_Ear3
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/Neck1/Neck2/Neck3/Head/R_Eyeball
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/Neck1/Neck2/Neck3/Head/R_EyebrowRoot
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/Neck1/Neck2/Neck3/Head/R_EyebrowRoot/R_Eyebrow
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/Neck1/Neck2/Neck3/Head/R_LipCornerRoot
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/Neck1/Neck2/Neck3/Head/R_LipCornerRoot/R_LipCorner
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/Neck1/Neck2/Neck3/Head/SnoutTip
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/Back1/Back2/Chest/Neck1/Neck2/Neck3/HeadLookSensor
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/L_Pelvis
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/L_Pelvis/L_HipRoot
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/L_Pelvis/L_HipRoot/L_Hip
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/L_Pelvis/L_HipRoot/L_Hip/L_Knee
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/L_Pelvis/L_HipRoot/L_Hip/L_Knee/L_Ankle
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/L_Pelvis/L_HipRoot/L_Hip/L_Knee/L_Ankle/L_RearPaw
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/L_Pelvis/L_HipRoot/L_Hip/L_Knee/L_Ankle/L_RearPaw/L_RearPawTip
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/R_Pelvis
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/R_Pelvis/R_HipRoot
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/R_Pelvis/R_HipRoot/R_Hip
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/R_Pelvis/R_HipRoot/R_Hip/R_Knee
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/R_Pelvis/R_HipRoot/R_Hip/R_Knee/R_Ankle
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/R_Pelvis/R_HipRoot/R_Hip/R_Knee/R_Ankle/R_RearPaw
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/R_Pelvis/R_HipRoot/R_Hip/R_Knee/R_Ankle/R_RearPaw/R_RearPawTip
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/TailRoot
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/TailRoot/Tail
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/TailRoot/Tail/Tail1
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/TailRoot/Tail/Tail1/Tail2
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/TailRoot/Tail/Tail1/Tail2/Tail3
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/TailRoot/Tail/Tail1/Tail2/Tail3/Tail4
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/TailRoot/Tail/Tail1/Tail2/Tail3/Tail4/Tail5
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/TailRoot/Tail/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6
+        weight: 1
+      - path: PelvicRootNull/PelvicRoot/TailRoot/Tail/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/TailTip
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: PelvicRootNull
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,462 @@
+fileFormatVersion: 2
+guid: 9c108fe9cd8264538b89ce545773757f
+timeCreated: 1460388964
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: ' Head'
+    100002: ' L_Calf'
+    100004: ' L_Clavicle'
+    100006: ' L_Foot'
+    100008: ' L_Foot.2'
+    100010: ' L_Foot.Goal'
+    100012: ' L_Foot0'
+    100014: ' L_Foot01'
+    100016: ' L_Foot01.Goal'
+    100018: ' L_FootTip'
+    100020: ' L_Forearm'
+    100022: ' L_Paw'
+    100024: ' L_Paw.2'
+    100026: ' L_Paw.Goal'
+    100028: ' L_Paw0'
+    100030: ' L_PawTip'
+    100032: ' L_PawTip.Goal'
+    100034: ' L_Thigh'
+    100036: ' L_Thigh.Pole'
+    100038: ' L_UpperArm'
+    100040: ' L_UpperArm.Pole'
+    100042: ' Neck'
+    100044: ' Neck1'
+    100046: ' Pelvis'
+    100048: ' R_Calf'
+    100050: ' R_Clavicle'
+    100052: ' R_Foot'
+    100054: ' R_Foot.2'
+    100056: ' R_Foot.Goal'
+    100058: ' R_Foot0'
+    100060: ' R_Foot01'
+    100062: ' R_Foot01.Goal'
+    100064: ' R_Foot02'
+    100066: ' R_Forearm'
+    100068: ' R_Paw'
+    100070: ' R_Paw.2'
+    100072: ' R_Paw.Goal'
+    100074: ' R_Paw0'
+    100076: ' R_PawTip'
+    100078: ' R_PawTip.Goal'
+    100080: ' R_Thigh'
+    100082: ' R_Thigh.Pole'
+    100084: ' R_UpperArm'
+    100086: ' R_UpperArm.Pole'
+    100088: ' Spine'
+    100090: ' Spine1'
+    100092: Bear1
+    100094: //RootNode
+    100096: HeadTip
+    100098: Null
+    100100: PositionSelection
+    100102: Root
+    100104: RotationSelection
+    400000: ' Head'
+    400002: ' L_Calf'
+    400004: ' L_Clavicle'
+    400006: ' L_Foot'
+    400008: ' L_Foot.2'
+    400010: ' L_Foot.Goal'
+    400012: ' L_Foot0'
+    400014: ' L_Foot01'
+    400016: ' L_Foot01.Goal'
+    400018: ' L_FootTip'
+    400020: ' L_Forearm'
+    400022: ' L_Paw'
+    400024: ' L_Paw.2'
+    400026: ' L_Paw.Goal'
+    400028: ' L_Paw0'
+    400030: ' L_PawTip'
+    400032: ' L_PawTip.Goal'
+    400034: ' L_Thigh'
+    400036: ' L_Thigh.Pole'
+    400038: ' L_UpperArm'
+    400040: ' L_UpperArm.Pole'
+    400042: ' Neck'
+    400044: ' Neck1'
+    400046: ' Pelvis'
+    400048: ' R_Calf'
+    400050: ' R_Clavicle'
+    400052: ' R_Foot'
+    400054: ' R_Foot.2'
+    400056: ' R_Foot.Goal'
+    400058: ' R_Foot0'
+    400060: ' R_Foot01'
+    400062: ' R_Foot01.Goal'
+    400064: ' R_Foot02'
+    400066: ' R_Forearm'
+    400068: ' R_Paw'
+    400070: ' R_Paw.2'
+    400072: ' R_Paw.Goal'
+    400074: ' R_Paw0'
+    400076: ' R_PawTip'
+    400078: ' R_PawTip.Goal'
+    400080: ' R_Thigh'
+    400082: ' R_Thigh.Pole'
+    400084: ' R_UpperArm'
+    400086: ' R_UpperArm.Pole'
+    400088: ' Spine'
+    400090: ' Spine1'
+    400092: Bear1
+    400094: //RootNode
+    400096: HeadTip
+    400098: Null
+    400100: PositionSelection
+    400102: Root
+    400104: RotationSelection
+    4300000: Bear1
+    7400000: Idle
+    7400002: Walk
+    9500000: //RootNode
+    13700000: Bear1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: C4D Animation Take
+      firstFrame: 35
+      lastFrame: 88
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ' L_Foot'
+        weight: 1
+      - path: ' L_Foot/ L_Foot.Goal'
+        weight: 1
+      - path: ' L_Foot/ L_Foot01.Goal'
+        weight: 1
+      - path: ' L_Foot/ L_Thigh.Pole'
+        weight: 1
+      - path: ' L_Paw'
+        weight: 1
+      - path: ' L_Paw/ L_Paw.Goal'
+        weight: 1
+      - path: ' L_Paw/ L_PawTip.Goal'
+        weight: 1
+      - path: ' L_Paw/ L_UpperArm.Pole'
+        weight: 1
+      - path: ' R_Foot'
+        weight: 1
+      - path: ' R_Foot/ R_Foot.Goal'
+        weight: 1
+      - path: ' R_Foot/ R_Foot01.Goal'
+        weight: 1
+      - path: ' R_Foot/ R_Thigh.Pole'
+        weight: 1
+      - path: ' R_Paw'
+        weight: 1
+      - path: ' R_Paw/ R_Paw.Goal'
+        weight: 1
+      - path: ' R_Paw/ R_PawTip.Goal'
+        weight: 1
+      - path: ' R_Paw/ R_UpperArm.Pole'
+        weight: 1
+      - path: Bear1
+        weight: 1
+      - path: Bear1/Null
+        weight: 1
+      - path: PositionSelection
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/ Pelvis
+        weight: 1
+      - path: Root/ Pelvis/ Spine
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ L_Thigh
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ L_Thigh/ L_Calf
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ L_Thigh/ L_Calf/ L_Foot.2
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ L_Thigh/ L_Calf/ L_Foot.2/ L_Foot0
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ L_Thigh/ L_Calf/ L_Foot.2/ L_Foot0/ L_Foot01
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ L_Thigh/ L_Calf/ L_Foot.2/ L_Foot0/ L_Foot01/ L_FootTip
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ R_Thigh
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ R_Thigh/ R_Calf
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ R_Thigh/ R_Calf/ R_Foot.2
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ R_Thigh/ R_Calf/ R_Foot.2/ R_Foot0
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ R_Thigh/ R_Calf/ R_Foot.2/ R_Foot0/ R_Foot01
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ R_Thigh/ R_Calf/ R_Foot.2/ R_Foot0/ R_Foot01/ R_Foot02
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ Spine1
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ Spine1/ Neck
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ Spine1/ Neck/ L_Clavicle
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ Spine1/ Neck/ L_Clavicle/ L_UpperArm
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ Spine1/ Neck/ L_Clavicle/ L_UpperArm/ L_Forearm
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ Spine1/ Neck/ L_Clavicle/ L_UpperArm/ L_Forearm/
+          L_Paw.2
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ Spine1/ Neck/ L_Clavicle/ L_UpperArm/ L_Forearm/
+          L_Paw.2/ L_Paw0
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ Spine1/ Neck/ L_Clavicle/ L_UpperArm/ L_Forearm/
+          L_Paw.2/ L_Paw0/ L_PawTip
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ Spine1/ Neck/ Neck1
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ Spine1/ Neck/ Neck1/ Head
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ Spine1/ Neck/ Neck1/ Head/HeadTip
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ Spine1/ Neck/ R_Clavicle
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ Spine1/ Neck/ R_Clavicle/ R_UpperArm
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ Spine1/ Neck/ R_Clavicle/ R_UpperArm/ R_Forearm
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ Spine1/ Neck/ R_Clavicle/ R_UpperArm/ R_Forearm/
+          R_Paw.2
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ Spine1/ Neck/ R_Clavicle/ R_UpperArm/ R_Forearm/
+          R_Paw.2/ R_Paw0
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ Spine1/ Neck/ R_Clavicle/ R_UpperArm/ R_Forearm/
+          R_Paw.2/ R_Paw0/ R_PawTip
+        weight: 1
+      - path: RotationSelection
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Walk
+      takeName: C4D Animation Take
+      firstFrame: 102
+      lastFrame: 148
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ' L_Foot'
+        weight: 1
+      - path: ' L_Foot/ L_Foot.Goal'
+        weight: 1
+      - path: ' L_Foot/ L_Foot01.Goal'
+        weight: 1
+      - path: ' L_Foot/ L_Thigh.Pole'
+        weight: 1
+      - path: ' L_Paw'
+        weight: 1
+      - path: ' L_Paw/ L_Paw.Goal'
+        weight: 1
+      - path: ' L_Paw/ L_PawTip.Goal'
+        weight: 1
+      - path: ' L_Paw/ L_UpperArm.Pole'
+        weight: 1
+      - path: ' R_Foot'
+        weight: 1
+      - path: ' R_Foot/ R_Foot.Goal'
+        weight: 1
+      - path: ' R_Foot/ R_Foot01.Goal'
+        weight: 1
+      - path: ' R_Foot/ R_Thigh.Pole'
+        weight: 1
+      - path: ' R_Paw'
+        weight: 1
+      - path: ' R_Paw/ R_Paw.Goal'
+        weight: 1
+      - path: ' R_Paw/ R_PawTip.Goal'
+        weight: 1
+      - path: ' R_Paw/ R_UpperArm.Pole'
+        weight: 1
+      - path: Bear1
+        weight: 1
+      - path: Bear1/Null
+        weight: 1
+      - path: PositionSelection
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/ Pelvis
+        weight: 1
+      - path: Root/ Pelvis/ Spine
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ L_Thigh
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ L_Thigh/ L_Calf
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ L_Thigh/ L_Calf/ L_Foot.2
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ L_Thigh/ L_Calf/ L_Foot.2/ L_Foot0
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ L_Thigh/ L_Calf/ L_Foot.2/ L_Foot0/ L_Foot01
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ L_Thigh/ L_Calf/ L_Foot.2/ L_Foot0/ L_Foot01/ L_FootTip
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ R_Thigh
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ R_Thigh/ R_Calf
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ R_Thigh/ R_Calf/ R_Foot.2
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ R_Thigh/ R_Calf/ R_Foot.2/ R_Foot0
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ R_Thigh/ R_Calf/ R_Foot.2/ R_Foot0/ R_Foot01
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ R_Thigh/ R_Calf/ R_Foot.2/ R_Foot0/ R_Foot01/ R_Foot02
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ Spine1
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ Spine1/ Neck
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ Spine1/ Neck/ L_Clavicle
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ Spine1/ Neck/ L_Clavicle/ L_UpperArm
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ Spine1/ Neck/ L_Clavicle/ L_UpperArm/ L_Forearm
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ Spine1/ Neck/ L_Clavicle/ L_UpperArm/ L_Forearm/
+          L_Paw.2
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ Spine1/ Neck/ L_Clavicle/ L_UpperArm/ L_Forearm/
+          L_Paw.2/ L_Paw0
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ Spine1/ Neck/ L_Clavicle/ L_UpperArm/ L_Forearm/
+          L_Paw.2/ L_Paw0/ L_PawTip
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ Spine1/ Neck/ Neck1
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ Spine1/ Neck/ Neck1/ Head
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ Spine1/ Neck/ Neck1/ Head/HeadTip
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ Spine1/ Neck/ R_Clavicle
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ Spine1/ Neck/ R_Clavicle/ R_UpperArm
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ Spine1/ Neck/ R_Clavicle/ R_UpperArm/ R_Forearm
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ Spine1/ Neck/ R_Clavicle/ R_UpperArm/ R_Forearm/
+          R_Paw.2
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ Spine1/ Neck/ R_Clavicle/ R_UpperArm/ R_Forearm/
+          R_Paw.2/ R_Paw0
+        weight: 1
+      - path: Root/ Pelvis/ Spine/ Spine1/ Neck/ R_Clavicle/ R_UpperArm/ R_Forearm/
+          R_Paw.2/ R_Paw0/ R_PawTip
+        weight: 1
+      - path: RotationSelection
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: Root
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

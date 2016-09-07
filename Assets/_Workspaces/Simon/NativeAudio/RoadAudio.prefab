@@ -1,0 +1,333 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &140006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 478976}
+  - 114: {fileID: 11482588}
+  m_Layer: 0
+  m_Name: RoadAudio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &478976
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 140006}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11482588
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 140006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 002501532768efb40bd792fe46bd5dd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tireSounds:
+  - clip: {fileID: 8300000, guid: 816ea71883f58cb408d80f523baa3975, type: 3}
+    usesSpeedCurve: 1
+    speedCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 2
+        outSlope: 2
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    maxSpeed: 100
+    usesTractionCurve: 1
+    tractionCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 3.9407012
+        outSlope: 3.9407012
+        tangentMode: 0
+      - time: 0.26082015
+        value: 0.6286568
+        inSlope: 1.0088086
+        outSlope: 1.0088086
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    tractionType: 0
+    mixerGroup: {fileID: 24341558, guid: fb891b621f1c60746a452bcb835c286b, type: 2}
+  - clip: {fileID: 8300000, guid: 816ea71883f58cb408d80f523baa3975, type: 3}
+    usesSpeedCurve: 1
+    speedCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 1.2965394
+        outSlope: 1.2965394
+        tangentMode: 0
+      - time: 0.9937107
+        value: 0.79474944
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    maxSpeed: 100
+    usesTractionCurve: 1
+    tractionCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 3.9407012
+        outSlope: 3.9407012
+        tangentMode: 0
+      - time: 0.26082015
+        value: 0.6286568
+        inSlope: 1.0088086
+        outSlope: 1.0088086
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    tractionType: 0
+    mixerGroup: {fileID: 24303802, guid: fb891b621f1c60746a452bcb835c286b, type: 2}
+  - clip: {fileID: 8300000, guid: 93a28600db5bccb46bd3437b66ee85bf, type: 3}
+    usesSpeedCurve: 1
+    speedCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 5.3816447
+        outSlope: 5.3816447
+        tangentMode: 0
+      - time: 0.20935874
+        value: 0.71626997
+        inSlope: 1.0437979
+        outSlope: 1.0437979
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    maxSpeed: 100
+    usesTractionCurve: 1
+    tractionCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 3.9407012
+        outSlope: 3.9407012
+        tangentMode: 0
+      - time: 0.26082015
+        value: 0.6286568
+        inSlope: 1.0088086
+        outSlope: 1.0088086
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    tractionType: 0
+    mixerGroup: {fileID: 24303802, guid: fb891b621f1c60746a452bcb835c286b, type: 2}
+  - clip: {fileID: 8300000, guid: 7b10af828a9c00240927c290e2536eb4, type: 3}
+    usesSpeedCurve: 1
+    speedCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: -0.0020855477
+        value: 1.0047731
+        inSlope: -0.08479279
+        outSlope: -0.08479279
+        tangentMode: 0
+      - time: 1.0052338
+        value: 0.62997645
+        inSlope: -0.54964364
+        outSlope: -0.54964364
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    maxSpeed: 100
+    usesTractionCurve: 1
+    tractionCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0.9999999
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 0.48759604
+        value: 0.4131081
+        inSlope: -1.4841557
+        outSlope: -1.4841557
+        tangentMode: 0
+      - time: 1
+        value: 0.0035150647
+        inSlope: -0.41769075
+        outSlope: -0.41769075
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    tractionType: 0
+    mixerGroup: {fileID: 24341558, guid: fb891b621f1c60746a452bcb835c286b, type: 2}
+  - clip: {fileID: 8300000, guid: 16b0e61d04d21fb42a687a070e3fbf8a, type: 3}
+    usesSpeedCurve: 0
+    speedCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: -0.0020855477
+        value: 1.0047731
+        inSlope: -0.08479279
+        outSlope: -0.08479279
+        tangentMode: 0
+      - time: 1.0052338
+        value: 0.62997645
+        inSlope: -0.54964364
+        outSlope: -0.54964364
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    maxSpeed: 100
+    usesTractionCurve: 1
+    tractionCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0.9999999
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 0.38976994
+        value: 0.30803064
+        inSlope: -1.4841557
+        outSlope: -1.4841557
+        tangentMode: 0
+      - time: 1
+        value: 0.0035150647
+        inSlope: -0.41769075
+        outSlope: -0.41769075
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    tractionType: 2
+    mixerGroup: {fileID: 24303802, guid: fb891b621f1c60746a452bcb835c286b, type: 2}
+  - clip: {fileID: 8300000, guid: fac5e213694a7cc4d95c27ebe3ef5c55, type: 3}
+    usesSpeedCurve: 1
+    speedCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0.0017574728
+        inSlope: 3.9613352
+        outSlope: 3.9613352
+        tangentMode: 0
+      - time: 0.028880995
+        value: 0.44206324
+        inSlope: 7.8628173
+        outSlope: 7.8628173
+        tangentMode: 0
+      - time: 0.11016015
+        value: 0.7351172
+        inSlope: 0.86621404
+        outSlope: 0.86621404
+        tangentMode: 0
+      - time: 1
+        value: 1.0017575
+        inSlope: 0.022637399
+        outSlope: 0.022637399
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    maxSpeed: 100
+    usesTractionCurve: 1
+    tractionCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0.9999999
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 0.8773476
+        value: 0.57072437
+        inSlope: -1.4841557
+        outSlope: -1.4841557
+        tangentMode: 0
+      - time: 1
+        value: 0.0035150647
+        inSlope: -6.6730037
+        outSlope: -6.6730037
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    tractionType: 1
+    mixerGroup: {fileID: 24341558, guid: fb891b621f1c60746a452bcb835c286b, type: 2}
+  accellTraction: 1
+  brakeTraction: 1
+  speed: 0
+  surface: 0
+  mixer: {fileID: 24100000, guid: fb891b621f1c60746a452bcb835c286b, type: 2}
+  tarmacVolumeString: TarmacVolume
+  offroadVolumeString: DirtVolume
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 140006}
+  m_IsPrefabParent: 1

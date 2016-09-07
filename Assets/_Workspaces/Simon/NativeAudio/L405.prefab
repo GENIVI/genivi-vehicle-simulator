@@ -1,0 +1,555 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &127130
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 420004}
+  - 114: {fileID: 11440190}
+  m_Layer: 0
+  m_Name: Load
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &140240
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 412954}
+  m_Layer: 0
+  m_Name: Exhaust
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &153158
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 419692}
+  - 114: {fileID: 11458312}
+  m_Layer: 0
+  m_Name: L405
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &157380
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 436594}
+  m_Layer: 0
+  m_Name: Engine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &166124
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 424574}
+  - 114: {fileID: 11463820}
+  m_Layer: 0
+  m_Name: Load
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &173784
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 449438}
+  - 114: {fileID: 11488934}
+  m_Layer: 0
+  m_Name: NoLoad
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &192424
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 423122}
+  - 114: {fileID: 11463424}
+  m_Layer: 0
+  m_Name: NoLoad
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &412954
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 140240}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -3.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 420004}
+  - {fileID: 449438}
+  m_Father: {fileID: 419692}
+  m_RootOrder: 1
+--- !u!4 &419692
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 153158}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 436594}
+  - {fileID: 412954}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!4 &420004
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 127130}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 412954}
+  m_RootOrder: 0
+--- !u!4 &423122
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 192424}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 436594}
+  m_RootOrder: 1
+--- !u!4 &424574
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166124}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 436594}
+  m_RootOrder: 0
+--- !u!4 &436594
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 157380}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 3.27}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 424574}
+  - {fileID: 423122}
+  m_Father: {fileID: 419692}
+  m_RootOrder: 0
+--- !u!4 &449438
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 173784}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 412954}
+  m_RootOrder: 1
+--- !u!114 &11440190
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 127130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf546a654ddf49f41b22e7328bf59670, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  group: {fileID: 24300014, guid: e11959841afe20540926860a68b03d9e, type: 2}
+  volumeParamName: ExhaustLoadVol
+  samples:
+  - clip: {fileID: 8300000, guid: 83606ea87d7615541a6824191c9e4dcd, type: 3}
+    minRpm: 0
+    maxRpm: 2400
+    autoPitchRoot: 2030
+    volume: -4
+  - clip: {fileID: 8300000, guid: 669ed975f9ea5d744bd38dc43e0f2658, type: 3}
+    minRpm: 2050
+    maxRpm: 2850
+    autoPitchRoot: 2470
+    volume: -2.5
+  - clip: {fileID: 8300000, guid: 8e1a286096258124f8575b67e5c3bc1f, type: 3}
+    minRpm: 2550
+    maxRpm: 3380
+    autoPitchRoot: 2980
+    volume: -2
+  - clip: {fileID: 8300000, guid: bbf0acbf32a47e94488e523862fabf4a, type: 3}
+    minRpm: 3040
+    maxRpm: 3960
+    autoPitchRoot: 3490
+    volume: -2
+  - clip: {fileID: 8300000, guid: 1095690ff4b9c84448ab08cafba10fea, type: 3}
+    minRpm: 3580
+    maxRpm: 4520
+    autoPitchRoot: 4040
+    volume: -1
+  - clip: {fileID: 8300000, guid: 9ba350ff882b95c41bf302d7dd8308a0, type: 3}
+    minRpm: 4120
+    maxRpm: 5180
+    autoPitchRoot: 4730
+    volume: -1
+  - clip: {fileID: 8300000, guid: df9019c8a22148f4abedaed02b724062, type: 3}
+    minRpm: 4840
+    maxRpm: 5560
+    autoPitchRoot: 5380
+    volume: 0
+  - clip: {fileID: 8300000, guid: 9112d3e2c66d3d4438c44cf3acccd165, type: 3}
+    minRpm: 5400
+    maxRpm: 5900
+    autoPitchRoot: 5680
+    volume: 0
+  - clip: {fileID: 8300000, guid: d8b26bbe4e0bcd541a71c83e94245e79, type: 3}
+    minRpm: 5750
+    maxRpm: 8000
+    autoPitchRoot: 6060
+    volume: 0
+  fadeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!114 &11458312
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 153158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 382ba3fd6aa348541a1c6670dd49e8c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  engineLoad: {fileID: 11463820}
+  engineNoLoad: {fileID: 11463424}
+  exhaustLoad: {fileID: 11440190}
+  exhaustNoLoad: {fileID: 11488934}
+  rpm: 0
+  load: 0
+  loadFade:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  maxLoadAtten: 0
+  maxNoLoadAtten: -3
+  minAtten: -80
+  maxRpm: 7500
+--- !u!114 &11463424
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 192424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf546a654ddf49f41b22e7328bf59670, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  group: {fileID: 24386092, guid: e11959841afe20540926860a68b03d9e, type: 2}
+  volumeParamName: EngineNoLoadVol
+  samples:
+  - clip: {fileID: 8300000, guid: b234080eff27b904ea7ad5d56e844a5f, type: 3}
+    minRpm: 0
+    maxRpm: 1900
+    autoPitchRoot: 1480
+    volume: -3
+  - clip: {fileID: 8300000, guid: 59fea6dee7ba8524d9c1f852dacc2cfc, type: 3}
+    minRpm: 1550
+    maxRpm: 2400
+    autoPitchRoot: 2030
+    volume: -2
+  - clip: {fileID: 8300000, guid: 07349f9f89dee6d45bcde21ac968d779, type: 3}
+    minRpm: 2050
+    maxRpm: 2850
+    autoPitchRoot: 2470
+    volume: 0
+  - clip: {fileID: 8300000, guid: e96892caa89b8254696b9b1f88c635b3, type: 3}
+    minRpm: 2550
+    maxRpm: 3380
+    autoPitchRoot: 2980
+    volume: 0
+  - clip: {fileID: 8300000, guid: 913830ecb40b0b04a8728c8dcfdba4b6, type: 3}
+    minRpm: 3040
+    maxRpm: 3960
+    autoPitchRoot: 3490
+    volume: 0
+  - clip: {fileID: 8300000, guid: d6f1f95e161dd93499172d50e27a9497, type: 3}
+    minRpm: 3580
+    maxRpm: 4520
+    autoPitchRoot: 4040
+    volume: 0
+  - clip: {fileID: 8300000, guid: fd5f83cfadb0ebc4ab1acce2f0ca1b87, type: 3}
+    minRpm: 4120
+    maxRpm: 5180
+    autoPitchRoot: 4730
+    volume: 0
+  - clip: {fileID: 8300000, guid: c35c5a1efe2a1054e9aecf7defe8c5f5, type: 3}
+    minRpm: 4840
+    maxRpm: 5560
+    autoPitchRoot: 5380
+    volume: 0
+  - clip: {fileID: 8300000, guid: 66f5f84d4fdb40e4182f232638cb89b4, type: 3}
+    minRpm: 5400
+    maxRpm: 5900
+    autoPitchRoot: 5680
+    volume: 0
+  - clip: {fileID: 8300000, guid: 5b51a301f779d134a8532da14ed9d625, type: 3}
+    minRpm: 4400
+    maxRpm: 5200
+    autoPitchRoot: 4930
+    volume: 0
+  - clip: {fileID: 0}
+    minRpm: 0
+    maxRpm: 0
+    autoPitchRoot: 0
+    volume: 0
+  fadeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!114 &11463820
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf546a654ddf49f41b22e7328bf59670, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  group: {fileID: 24341506, guid: e11959841afe20540926860a68b03d9e, type: 2}
+  volumeParamName: EngineLoadVol
+  samples:
+  - clip: {fileID: 8300000, guid: 9331e05476aa93749a870435862eae05, type: 3}
+    minRpm: 0
+    maxRpm: 2400
+    autoPitchRoot: 2030
+    volume: -2.5
+  - clip: {fileID: 8300000, guid: b736c0d747112674b8610a83efefc0e6, type: 3}
+    minRpm: 2050
+    maxRpm: 2850
+    autoPitchRoot: 2470
+    volume: -1
+  - clip: {fileID: 8300000, guid: 8ad267d7adf86084b9c1c5d43a41de93, type: 3}
+    minRpm: 2550
+    maxRpm: 3375
+    autoPitchRoot: 2980
+    volume: 0
+  - clip: {fileID: 8300000, guid: 40ebbb4e9c2fe15488c3d1e7acaa0d41, type: 3}
+    minRpm: 2200
+    maxRpm: 2900
+    autoPitchRoot: 2720
+    volume: 0
+  - clip: {fileID: 8300000, guid: 39d2ffc0f94179643bcd5b90d714335e, type: 3}
+    minRpm: 3580
+    maxRpm: 4500
+    autoPitchRoot: 4040
+    volume: 0
+  - clip: {fileID: 8300000, guid: 84aba63da73aee64d8bb8a2840ac3c93, type: 3}
+    minRpm: 4120
+    maxRpm: 5180
+    autoPitchRoot: 4730
+    volume: 0
+  - clip: {fileID: 8300000, guid: 73617d516ee4aa548893b5fcc8c65b38, type: 3}
+    minRpm: 4840
+    maxRpm: 5560
+    autoPitchRoot: 5380
+    volume: 0
+  - clip: {fileID: 8300000, guid: ad4b5a9c12d7f9d40a718482a21a3f3a, type: 3}
+    minRpm: 5400
+    maxRpm: 5900
+    autoPitchRoot: 5680
+    volume: 0
+  - clip: {fileID: 8300000, guid: 3b9fcb23f1374d84390ba50d5204fde1, type: 3}
+    minRpm: 5750
+    maxRpm: 8000
+    autoPitchRoot: 6060
+    volume: 0
+  fadeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!114 &11488934
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 173784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf546a654ddf49f41b22e7328bf59670, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  group: {fileID: 24397278, guid: e11959841afe20540926860a68b03d9e, type: 2}
+  volumeParamName: ExhaustNoLoadVol
+  samples:
+  - clip: {fileID: 8300000, guid: 3e640a70a3504054aae58ecb58379097, type: 3}
+    minRpm: 0
+    maxRpm: 1900
+    autoPitchRoot: 1480
+    volume: 0
+  - clip: {fileID: 8300000, guid: 65ec7714ea6115e4bb2526522e95aab1, type: 3}
+    minRpm: 1550
+    maxRpm: 2400
+    autoPitchRoot: 2030
+    volume: -2
+  - clip: {fileID: 8300000, guid: 8ea477c010db14049bda195a0e5cb4d5, type: 3}
+    minRpm: 2050
+    maxRpm: 2850
+    autoPitchRoot: 2470
+    volume: 0
+  - clip: {fileID: 8300000, guid: 664ae4dcad1fa2b469a57e2be52d70c7, type: 3}
+    minRpm: 2550
+    maxRpm: 3380
+    autoPitchRoot: 2980
+    volume: 0
+  - clip: {fileID: 8300000, guid: e1d2474f89699654a9cd83ddadd68b40, type: 3}
+    minRpm: 3040
+    maxRpm: 3950
+    autoPitchRoot: 3490
+    volume: 0
+  - clip: {fileID: 8300000, guid: 2341e124e54f9cd4a98af5abc985cf57, type: 3}
+    minRpm: 3580
+    maxRpm: 4520
+    autoPitchRoot: 4040
+    volume: 0
+  - clip: {fileID: 8300000, guid: 071473cbebdf9564ca4a7a4b44bd21de, type: 3}
+    minRpm: 4120
+    maxRpm: 5140
+    autoPitchRoot: 4730
+    volume: 0
+  - clip: {fileID: 8300000, guid: dbe10ea8292ffa445872fb5b6a95cdb0, type: 3}
+    minRpm: 4840
+    maxRpm: 5550
+    autoPitchRoot: 5380
+    volume: 0
+  - clip: {fileID: 8300000, guid: df51b3c198ce6b14e9a27fb7c597ddce, type: 3}
+    minRpm: 5400
+    maxRpm: 5900
+    autoPitchRoot: 5680
+    volume: 0
+  - clip: {fileID: 8300000, guid: b0404106d72297e4da86595c9be1cfe9, type: 3}
+    minRpm: 5750
+    maxRpm: 8000
+    autoPitchRoot: 6060
+    volume: 0
+  fadeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 153158}
+  m_IsPrefabParent: 1

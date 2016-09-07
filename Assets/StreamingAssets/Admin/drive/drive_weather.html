@@ -1,0 +1,65 @@
+<div class="column">
+
+    <h3>TIME</h3>
+    <div class="wholeSlider">
+        <div class="title">Time of Day</div>
+        <div class="value">{{time}}</div>
+        <slider ng-change="OnTimeOfDayChange()" floor="0" width="24" ceiling="24" step="0.02" precision="2" ng-model="time"></slider>
+    </div>
+
+    <div class="toggle">
+        <span class="toggle-title">
+            Progress Time</span>
+            <input ng-change="OnProgressTimeChange()" ng-model="$root.progressTime" class='tgl tgl-light' id='cbtime' type='checkbox'>
+            <label class='tgl-btn' for='cbtime'></label>
+    </div>
+</div>
+
+<div class="column">
+
+    <h3>WEATHER</h3>
+    <div class="weather">
+    <div class="title">Weather</div>
+        <div class="bg"></div>
+        <input type="radio" id="r1" name="weatherradio" ng-change="OnWeatherChange()" ng-model="$root.currentWeather" value="clear" />
+        <label for="r1"><span></span>Clear</label>
+        <input type="radio" id="r2" name="weatherradio" ng-change="OnWeatherChange()" ng-model="$root.currentWeather" value="stormy" />
+        <label for="r2"><span></span>Storm</label>
+        <input type="radio" id="r3" name="weatherradio" ng-change="OnWeatherChange()" ng-model="$root.currentWeather" value="overcast" />
+        <label for="r3"><span></span>Overcast</label>
+        
+    </div>
+    <div class="toggle">
+        <span class="toggle-title">
+            Wet Road
+        </span>
+        <input ng-model="$root.wetRoads" ng-change="OnWetRoadsChange()" class='tgl tgl-light' id='cbwet' type='checkbox'>
+        <label class='tgl-btn' for='cbwet'></label>
+    </div>
+    <div class="toggle">
+        <span class="toggle-title">
+            Sun Shafts
+        </span>
+        <input ng-model="$root.sunShafts" ng-change="OnSunShaftsChange()" class='tgl tgl-light' id='cbsunshafts' type='checkbox'>
+        <label class='tgl-btn' for='cbsunshafts'></label>
+    </div>
+</div>
+
+<script>
+    /*
+<div class="column">
+
+    <h3>CAMERA CONFIGURATION</h3>
+    <div class="wholeSlider">
+        <div class="title">Field of View</div>
+        <div class="value">{{$root.fov}}</div>
+        <slider ng-change="OnFovChange()" floor="10" width="24" ceiling="125" step="0.1" precision="2" ng-model="$root.fov"></slider>
+    </div>
+    <div class="wholeSlider">
+        <div class="title">Far Clip Plane</div>
+        <div class="value">{{$root.camFarClip}}</div>
+        <slider ng-change="OnFarClipChange()" floor="1" width="24" ceiling="15000" step="0.1" precision="2" ng-model="$root.camFarClip"></slider>
+    </div>
+</div>
+*/
+</script>

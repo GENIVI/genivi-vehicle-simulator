@@ -1,0 +1,8 @@
+5/13/2015 3:08:17 PM|Warn |Logger.set_Level|The current logging level has been changed to Debug.
+5/13/2015 3:10:04 PM|Fatal|<>c__DisplayClass1.<receiveRequest>b__0|System.NullReferenceException: Object reference not set to an instance of an object
+                             at WebSocketSharp.Ext.WriteContent (WebSocketSharp.Net.HttpListenerResponse response, System.Byte[] content) [0x00000] in <filename unknown>:0 
+                             at RemoteAdminController.<Start>m__2E (System.Object sender, WebSocketSharp.Server.HttpRequestEventArgs e) [0x001dd] in E:\14015_JLR\Assets\Scripts\Controllers\RemoteAdminController.cs:144 
+                             at WebSocketSharp.Server.HttpServer.processRequest (WebSocketSharp.Net.HttpListenerContext context) [0x00000] in <filename unknown>:0 
+                             at WebSocketSharp.Server.HttpServer+<>c__DisplayClass1.<receiveRequest>b__0 (System.Object state) [0x00000] in <filename unknown>:0 
+5/13/2015 3:10:54 PM|Warn |HttpServer.receiveRequest|Receiving has been stopped.
+                           reason: Listener closed.

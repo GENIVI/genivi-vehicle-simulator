@@ -1,0 +1,25 @@
+5/13/2015 3:08:17 PM|Warn |Logger.set_Level|The current logging level has been changed to Debug.
+5/13/2015 3:08:36 PM|Debug|WebSocket.acceptHandshake|A connection request from 127.0.0.1:39829:
+                           GET /api HTTP/1.1
+                           Host: localhost:8088
+                           Connection: Upgrade
+                           Pragma: no-cache
+                           Cache-Control: no-cache
+                           Upgrade: websocket
+                           Origin: http://localhost:8087
+                           Sec-WebSocket-Version: 13
+                           DNT: 1
+                           User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36
+                           Accept-Encoding: gzip, deflate, sdch
+                           Accept-Language: en-US,en;q=0.8
+                           Sec-WebSocket-Key: AA2mUheXOO36IutyWS/zxw==
+                           Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+5/13/2015 3:08:45 PM|Debug|WebSocket.sendHttpResponse|A response to this request:
+                           HTTP/1.1 101 Switching Protocols
+                           Server: websocket-sharp/1.0
+                           Upgrade: websocket
+                           Connection: Upgrade
+                           Sec-WebSocket-Accept: Dpi+gOSkan9hl2Fy8u4mzc+URsU=
+5/13/2015 3:10:54 PM|Info |WebSocket.close|Closing the connection has already been done.
+5/13/2015 3:10:54 PM|Debug|WebSocket.closeHandshake|Was clean?: True
+                           sent: True received: True

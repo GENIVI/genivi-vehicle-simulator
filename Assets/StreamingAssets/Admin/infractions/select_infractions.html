@@ -1,0 +1,36 @@
+<div id="selectInfractions">
+
+    <h3>INFRACTIONS</h3>
+
+    <table class="infractions-list">
+        <thead>
+            <tr><td>ID</td><td>TYPE</td><td>SYS. TIME</td><td>SESSION TIME</td><td>SPEED</td></tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="infraction in infractions" ng-class="{'selected' :infraction.id == selectedInfraction.id}" ng-click="OnClickInfraction(infraction.id)">
+                <td>{{infraction.id}}</td>
+                <td>{{infraction.type}}</td>
+                <td>{{GetSystemTime(infraction)}}</td>
+                <td>{{GetSessionTime(infraction)}}</td>
+                <td>{{infraction.speed}} MPH</td>
+            </tr>
+        </tbody>>
+
+    </table>
+
+    <div ng-hide="selectedInfraction == null" class="infractions-screenshot">
+        <img ng-src="{{GetImageUrl()}}" />
+    </div>
+
+    <table ng-hide="selectedInfraction == null" class="infractions-detail">
+        <tr><td class="title">INFRACTION {{selectedInfraction.id}}</td><td></td></tr>
+        <tr><td>Type</td></td><td>{{GetType()}}</td></tr>
+        <tr><td>Speed</td></td><td>{{selectedInfraction.speed}} MPH</td></tr>
+        <tr><td>Scene</td></td><td>{{GetLastScene()}}</td></tr>
+        <tr><td>System Time</td></td><td>{{GetSystemTime(selectedInfraction)}}</td></tr>
+        <tr><td>Session Time</td></td><td>{{GetSessionTime(selectedInfraction)}}</td></tr>
+    </table>
+    
+
+
+</div>

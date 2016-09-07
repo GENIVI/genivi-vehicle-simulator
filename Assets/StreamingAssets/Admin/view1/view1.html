@@ -1,0 +1,19 @@
+<div id="vehicleSelect">
+    <h3 ng-style="{'opacity': selectingCar ? 1 : 0.2}">SELECT VEHICLE</h3>
+    <ul>
+        <li ng-repeat="car in cars">
+            <div class="select-cancel" ng-click='Back()' ng-hide="selectingCar || currentVehicle != car.idx"></div>
+            <div class="select-rollover" ng-show="selectingCar"></div>
+            <img ng-click="ClickCar(car.idx)" ng-src="{{car.img}}" ng-style="{'opacity': selectingCar || currentVehicle == car.idx ? 1 : 0.2}"><span class="carName">{{car.name}}</span>
+        </li>
+    </ul>
+</div>
+
+<div id="environmentSelect">
+    <h3 ng-style="{'opacity': selectingScene ? 1 : 0.2}">SELECT SCENE</h3>
+    <ul>
+        <li ng-repeat="scene in scenes"><img ng-click="ClickScene(scene.idx)" ng-style="{'opacity': selectingScene || selectedScene == scene.idx ? 1 : 0.2}" ng-src="{{scene.img}}"><span class="environmentName">{{scene.name}}</span></li>
+    </ul>
+</div>
+
+

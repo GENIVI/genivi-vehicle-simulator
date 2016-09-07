@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>JLR HTML5 Admin</Name>
+    <ProjectGuid>{1aa13aee-737b-49b7-9257-72f7147623d5}</ProjectGuid>
+    <RootNamespace>JLR HTML5 Admin</RootNamespace>
+    <OutputType>Library</OutputType>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="components\slider.css" />
+    <Compile Include="components\slider.javascript" />
+    <Compile Include="images\Select\CarThumbs_Final_Cancel.png" />
+    <Compile Include="images\Select\CarThumbs_Final_CarRollover.png" />
+    <Compile Include="images\Select\CarThumbs_Final_CheckBox.png" />
+    <Compile Include="images\Select\evoque_thumb.png" />
+    <Compile Include="images\Select\ftypecoupe_thumb.png" />
+    <Compile Include="images\Select\ftype_thumb.png" />
+    <Compile Include="images\Select\L405_thumb.png" />
+    <Compile Include="images\Select\lr4_thumb.png" />
+    <Compile Include="images\Select\PCHThumb.png" />
+    <Compile Include="images\Select\SFThumb.png" />
+    <Compile Include="images\Select\xj_thumb.png" />
+    <Compile Include="images\Select\YosThumb.png" />
+    <Compile Include="images\background.png" />
+    <Compile Include="images\BigButton.png" />
+    <Compile Include="images\Dot.png" />
+    <Compile Include="images\Dot_dimmed.png" />
+    <Compile Include="images\MapSF.png" />
+    <Compile Include="images\MapYos.png" />
+    <Compile Include="images\PCH.png" />
+    <Compile Include="images\selectbg.png" />
+    <Compile Include="images\Slider.png" />
+    <Compile Include="images\SpeakerMax.png" />
+    <Compile Include="images\SpeakerMin.png" />
+    <Compile Include="images\ToggleOff.png" />
+    <Compile Include="images\ToggleOn.png" />
+    <Compile Include="Js\angular-animate.min.javascript" />
+    <Compile Include="Js\angular-resource.min.javascript" />
+    <Compile Include="Js\angular-route.min.javascript" />
+    <Compile Include="Js\angular-touch.min.javascript" />
+    <Compile Include="Js\angular.min.javascript" />
+    <Compile Include="Js\echotest.javascript" />
+    <Compile Include="view1\view1.html" />
+    <Compile Include="view1\view1.javascript" />
+    <Compile Include="view2\view2.html" />
+    <Compile Include="view2\view2.javascript" />
+    <Compile Include="app.css" />
+    <Compile Include="app.javascript" />
+    <Compile Include="index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="components\version" />
+    <Folder Include="components" />
+    <Folder Include="images\Select" />
+    <Folder Include="images" />
+    <Folder Include="Js" />
+    <Folder Include="view1" />
+    <Folder Include="view2" />
+    <Folder Include="drive\" />
+    <Folder Include="infractions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="drive\drive_audio.html" />
+    <Content Include="drive\drive_endscene.html" />
+    <Content Include="drive\drive_map.html" />
+    <Content Include="drive\drive_weather.html" />
+    <Content Include="drive\drive_admin.html" />
+    <Content Include="drive\drive_admin.javascript" />
+    <Content Include="infractions\select_infractions.html" />
+    <Content Include="infractions\select_infractions.javascript" />
+  </ItemGroup>
+</Project>
