@@ -108,7 +108,9 @@ public class BuildType : EditorWindow
         Debug.Log("Start build player");
 
         customSettings = new ProductionAppSettings();
-        
+
+        PlayerSettings.displayResolutionDialog = ResolutionDialogSetting.Disabled;
+
         Build(BuildName.CUSTOM, path + "JLR_MAIN.exe", scenes, BuildWindowMode.DEFAULT.ToString());
         while (!File.Exists(path + "JLR_MAIN_Data/BUILD_COMPLETE"))
         {
@@ -116,6 +118,7 @@ public class BuildType : EditorWindow
         }
         Debug.Log("Player Built");
     }
+
 
     private static void BuildInternalConsole()
     {
@@ -126,6 +129,8 @@ public class BuildType : EditorWindow
         path = path + "/";
 
         Debug.Log("Start build console");
+
+        PlayerSettings.displayResolutionDialog = ResolutionDialogSetting.Disabled;
 
         BuildConsole(path + "JLR_CONSOLE.exe");
         while (!File.Exists(path + "JLR_CONSOLE_Data/BUILD_COMPLETE"))
