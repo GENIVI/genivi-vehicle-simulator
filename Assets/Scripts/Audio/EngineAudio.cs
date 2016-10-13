@@ -63,6 +63,9 @@ public class EngineAudio : MonoBehaviour
 
     public void SetRPM(float rpm)
     {
+        if (sampleInstances == null)
+            return;
+
         for (int i = 0; i < sampleInstances.Count; i++)
         {
             SampleInstance instance = sampleInstances[i];

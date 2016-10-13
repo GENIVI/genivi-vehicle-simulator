@@ -95,15 +95,21 @@ public class ForceFeedback : MonoBehaviour
         //disable during autodrive mode
         if (TrackController.Instance.IsInAutoPath() || !(AppController.Instance.UserInput is SteeringWheelInputController))
         {
-            logi.SetConstantForce(0);
-            logi.SetDamperForce(0);
-            logi.SetSpringForce(0, 0);
+            if (logi != null)
+            {
+                logi.SetConstantForce(0);
+                logi.SetDamperForce(0);
+                logi.SetSpringForce(0, 0);
+            }
         }
         else
         {
-            logi.SetConstantForce((int)(forceFeedback * 10000f));
-            logi.SetSpringForce(Mathf.RoundToInt(springSaturation * Mathf.Abs(forceFeedback) * 10000f), Mathf.RoundToInt(springCoeff * 10000f));
-            logi.SetDamperForce(damperAmount);
+            if (logi != null)
+            {
+                logi.SetConstantForce((int)(forceFeedback * 10000f));
+                logi.SetSpringForce(Mathf.RoundToInt(springSaturation * Mathf.Abs(forceFeedback) * 10000f), Mathf.RoundToInt(springCoeff * 10000f));
+                logi.SetDamperForce(damperAmount);
+            }
         }
 
 
