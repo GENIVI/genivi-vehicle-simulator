@@ -116,17 +116,48 @@ public class MasterSelectController : MonoBehaviour {
         }
     }
 
+
+    private int quickLoadEnv = -1;
     private void Update()
     {
-    	if(Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.D))
+    	if(Input.GetKey(KeyCode.LeftShift))
     	{
-    		// AppController.Instance.currentSessionSettings.selectedCar = GetComponent(<CarSelectController>().choices[0].car);
-    		// AppController.Instance.currentSessionSettings.selectedCarShortname = GetComponent<CarSelectController>().choices[0].shortName;
-    		AppController.Instance.currentSessionSettings.selectedEnvironment = GetComponent<EnvironmentSelectController>().choices[0].environment;
-    		AudioController.Instance.FadeSelectMusic(0f);
-            NetworkController.Instance.SelectCar(0);
-            AppController.Instance.LoadDrivingScene(Environment.SCENIC);
-    	}
+            if(Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                quickLoadEnv = 0;
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                quickLoadEnv = 1;
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha3))
+            {
+                quickLoadEnv = 2;
+            }
+
+            if(quickLoadEnv >= 0 && Input.GetKeyDown(KeyCode.A))
+            {
+                QuickLoad(quickLoadEnv, 0);
+            }
+            if (quickLoadEnv >= 0 && Input.GetKeyDown(KeyCode.B))
+            {
+                QuickLoad(quickLoadEnv, 1);
+            }
+
+        }
+    }
+
+    private void QuickLoad(int env, int car)
+    {
+
+        // AppController.Instance.currentSessionSettings.selectedCar = GetComponent(<CarSelectController>().choices[0].car);
+        // AppController.Instance.currentSessionSettings.selectedCarShortname = GetComponent<CarSelectController>().choices[0].shortName;
+
+        AppController.Instance.currentSessionSettings.selectedCar = GetComponent<CarSelectController>().choices[car].car;
+        AppController.Instance.currentSessionSettings.selectedEnvironment = GetComponent<EnvironmentSelectController>().choices[env].environment;
+        AudioController.Instance.FadeSelectMusic(0f);
+        NetworkController.Instance.SelectCar(car);
+        AppController.Instance.LoadDrivingScene(AppController.Instance.currentSessionSettings.selectedEnvironment);
     }
 
     IEnumerator LoadScene()
