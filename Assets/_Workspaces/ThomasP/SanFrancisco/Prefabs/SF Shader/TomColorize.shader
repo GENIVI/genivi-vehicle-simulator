@@ -1,3 +1,6 @@
+// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
+// Upgrade NOTE: replaced '_World2Object' with 'unity_WorldToObject'
+
 // Upgrade NOTE: commented out 'float4 unity_LightmapST', a built-in variable
 // Upgrade NOTE: commented out 'sampler2D unity_Lightmap', a built-in variable
 // Upgrade NOTE: commented out 'sampler2D unity_LightmapInd', a built-in variable
@@ -68,11 +71,11 @@ Shader "Shader Forge/TomColorize" {
             VertexOutput vert (VertexInput v) {
                 VertexOutput o;
                 o.uv0 = v.uv0;
-                o.normalDir = mul(float4(v.normal,0), _World2Object).xyz;
-                o.tangentDir = normalize( mul( _Object2World, float4( v.tangent.xyz, 0.0 ) ).xyz );
+                o.normalDir = mul(float4(v.normal,0), unity_WorldToObject).xyz;
+                o.tangentDir = normalize( mul( unity_ObjectToWorld, float4( v.tangent.xyz, 0.0 ) ).xyz );
                 o.binormalDir = normalize(cross(o.normalDir, o.tangentDir) * v.tangent.w);
-                float4 objPos = mul ( _Object2World, float4(0,0,0,1) );
-                o.posWorld = mul(_Object2World, v.vertex);
+                float4 objPos = mul ( unity_ObjectToWorld, float4(0,0,0,1) );
+                o.posWorld = mul(unity_ObjectToWorld, v.vertex);
                 o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
                 #ifndef LIGHTMAP_OFF
                     o.uvLM = v.uv1.xy * unity_LightmapST.xy + unity_LightmapST.zw;
@@ -81,7 +84,7 @@ Shader "Shader Forge/TomColorize" {
                 return o;
             }
             fixed4 frag(VertexOutput i) : COLOR {
-                float4 objPos = mul ( _Object2World, float4(0,0,0,1) );
+                float4 objPos = mul ( unity_ObjectToWorld, float4(0,0,0,1) );
                 i.normalDir = normalize(i.normalDir);
                 float3x3 tangentTransform = float3x3( i.tangentDir, i.binormalDir, i.normalDir);
 /////// Normals:
@@ -179,17 +182,17 @@ Shader "Shader Forge/TomColorize" {
             VertexOutput vert (VertexInput v) {
                 VertexOutput o;
                 o.uv0 = v.uv0;
-                o.normalDir = mul(float4(v.normal,0), _World2Object).xyz;
-                o.tangentDir = normalize( mul( _Object2World, float4( v.tangent.xyz, 0.0 ) ).xyz );
+                o.normalDir = mul(float4(v.normal,0), unity_WorldToObject).xyz;
+                o.tangentDir = normalize( mul( unity_ObjectToWorld, float4( v.tangent.xyz, 0.0 ) ).xyz );
                 o.binormalDir = normalize(cross(o.normalDir, o.tangentDir) * v.tangent.w);
-                float4 objPos = mul ( _Object2World, float4(0,0,0,1) );
-                o.posWorld = mul(_Object2World, v.vertex);
+                float4 objPos = mul ( unity_ObjectToWorld, float4(0,0,0,1) );
+                o.posWorld = mul(unity_ObjectToWorld, v.vertex);
                 o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
                 TRANSFER_VERTEX_TO_FRAGMENT(o)
                 return o;
             }
             fixed4 frag(VertexOutput i) : COLOR {
-                float4 objPos = mul ( _Object2World, float4(0,0,0,1) );
+                float4 objPos = mul ( unity_ObjectToWorld, float4(0,0,0,1) );
                 i.normalDir = normalize(i.normalDir);
                 float3x3 tangentTransform = float3x3( i.tangentDir, i.binormalDir, i.normalDir);
 /////// Normals:

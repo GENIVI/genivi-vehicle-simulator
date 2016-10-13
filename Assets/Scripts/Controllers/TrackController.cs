@@ -383,7 +383,11 @@ public class TrackController : UnitySingleton<TrackController> {
         }
         else
         {
-            car = GameObject.Instantiate(defaultCar, carSpawnTarget.transform.position, carSpawnTarget.transform.rotation) as GameObject;
+            if (AppController.Instance.currentSessionSettings.selectedCar != null)
+                car = GameObject.Instantiate(AppController.Instance.currentSessionSettings.selectedCar.prefab, carSpawnTarget.transform.position, carSpawnTarget.transform.rotation) as GameObject;
+            else
+                car = GameObject.Instantiate(defaultCar, carSpawnTarget.transform.position, carSpawnTarget.transform.rotation) as GameObject;
+
             car.GetComponent<VehicleInputController>().enabled = true;
         }
 
