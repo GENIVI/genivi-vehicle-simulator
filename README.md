@@ -9,13 +9,13 @@ The project and the initial software code have been developed by Elements Design
 
 The project was created with Unity 5.3.4 and runs on Windows 10 (64 bit). To download the Unity IDE, please click here. Unity provides the ability to generate builds for Windows, Linux, and Mac OS X.
 
-A more detailed overview can be found in the [wiki home page](https://vendor2.nginfotpdx.net/gitlab/free-ride/free-ride/wikis/home).
+A more detailed overview can be found in the [wiki home page](https://github.com/GENIVI/genivi-vehicle-simulator/wiki).
 
 ## License Information
 This application is licensed under the [MPL License](https://www.mozilla.org/media/MPL/2.0/index.815ca599c9df.txt).
 
 ## How-To
-*To learn how to operate the Vehicle Simulator at OSTC, visit this [tutorial page](https://vendor2.nginfotpdx.net/gitlab/free-ride/free-ride/wikis/how-to-run-vehicle-simulator-ostc-pdx)*.
+*To learn how to operate the Vehicle Simulator at OSTC, visit this [tutorial page](https://github.com/GENIVI/genivi-vehicle-simulator/wiki)*.
 
 ## General Information
 ### Scenes
