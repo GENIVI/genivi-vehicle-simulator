@@ -12,6 +12,7 @@ public class NewAdminScreen : MonoBehaviour {
 
     public GameObject admin;
     public GameObject vehicleStettings;
+    public GameObject map;
     public GameObject panel;
 
     public DriveAdminUISettings settings;
@@ -47,6 +48,7 @@ public class NewAdminScreen : MonoBehaviour {
     {
         admin.SetActive(true);
         vehicleStettings.SetActive(false);
+        map.SetActive(false);
         ResetDefaults();
     }
 
@@ -54,6 +56,15 @@ public class NewAdminScreen : MonoBehaviour {
     {
         admin.SetActive(false);
         vehicleStettings.SetActive(true);
+        map.SetActive(false);
+        ResetDefaults();
+    }
+
+    public void SelectMap()
+    {
+        admin.SetActive(false);
+        vehicleStettings.SetActive(false);
+        map.SetActive(true);
         ResetDefaults();
     }
 
