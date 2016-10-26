@@ -41,6 +41,8 @@ DirectInputPlugin/local/
 fmod.log
 fmod_editor.log
 FMOD/
+!/Tools/Launcher/*
+!/Tools/Launcher/Launcher/*
 Tools/Launcher/Launcher/bin/
 Tools/Launcher/Launcher/obj/
 Tools/StreamListener/StreamListener/bin/
