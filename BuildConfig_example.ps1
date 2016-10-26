@@ -1,0 +1,7 @@
+$unity = "C:\Program Files\Unity\Editor\Unity.exe"
+$username = "ICMACHINEUSERNAME"
+$password = "ICMACHINEPASSWORD"
+$ComputerName = "ICMACHINENAME"
+$ICPath = "\\ICMACHINE\path\to\Console"
+$MainPath = "C:\path\to\DEPLOY"
+$ICLaunchService = "http://ip.address.of.IC:8086"
