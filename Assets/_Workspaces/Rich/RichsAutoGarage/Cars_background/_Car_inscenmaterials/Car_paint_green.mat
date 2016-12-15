@@ -15,121 +15,95 @@ Material:
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
-      data:
-        first:
-          name: _MainTex
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 0.1, y: 0.1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _Cube
-        second:
-          m_Texture: {fileID: 8900000, guid: 1e75ff3726bf9194d8f11df0e352c604, type: 2}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _SparkleTex
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Cube
+      second:
+        m_Texture: {fileID: 8900000, guid: 1e75ff3726bf9194d8f11df0e352c604, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _MainTex
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 0.1, y: 0.1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _SparkleTex
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
-      data:
-        first:
-          name: _Reflection
-        second: 0.07142858
-      data:
-        first:
-          name: _Shininess
-        second: 6.5825887
-      data:
-        first:
-          name: _Metallic
-        second: 0
-      data:
-        first:
-          name: _Gloss
-        second: 0.8928571
-      data:
-        first:
-          name: _FrezPow
-        second: 0.4642857
-      data:
-        first:
-          name: _FrezFalloff
-        second: 4
-      data:
-        first:
-          name: _FlakeScale
-        second: 1
-      data:
-        first:
-          name: _FlakePower
-        second: 0
-      data:
-        first:
-          name: _InterFlakePower
-        second: 128
-      data:
-        first:
-          name: _OuterFlakePower
-        second: 2
-      data:
-        first:
-          name: _Refraction
-        second: 0.01
-      data:
-        first:
-          name: _duoPower
-        second: 32
-      data:
-        first:
-          name: _duoInt
-        second: 0
-      data:
-        first:
-          name: _VertexLightningFactor
-        second: 1
-      data:
-        first:
-          name: _threshold
-        second: 0.5
-      data:
-        first:
-          name: _thresholdInt
-        second: 0
+    - first:
+        name: _FlakePower
+      second: 0
+    - first:
+        name: _FlakeScale
+      second: 1
+    - first:
+        name: _FrezFalloff
+      second: 4
+    - first:
+        name: _FrezPow
+      second: 0.4642857
+    - first:
+        name: _Gloss
+      second: 0.8928571
+    - first:
+        name: _InterFlakePower
+      second: 128
+    - first:
+        name: _Metallic
+      second: 0
+    - first:
+        name: _OuterFlakePower
+      second: 2
+    - first:
+        name: _Reflection
+      second: 0.07142858
+    - first:
+        name: _Refraction
+      second: 0.01
+    - first:
+        name: _Shininess
+      second: 6.5825887
+    - first:
+        name: _VertexLightningFactor
+      second: 1
+    - first:
+        name: _duoInt
+      second: 0
+    - first:
+        name: _duoPower
+      second: 32
+    - first:
+        name: _threshold
+      second: 0.5
+    - first:
+        name: _thresholdInt
+      second: 0
     m_Colors:
-      data:
-        first:
-          name: _Color
-        second: {r: 0.10915571, g: 0.29850745, b: 0.1157764, a: 1}
-      data:
-        first:
-          name: _SpecColor
-        second: {r: 0.9338235, g: 0.9338235, b: 0.9338235, a: 1}
-      data:
-        first:
-          name: _ReflectColor
-        second: {r: 0.029411793, g: 0.029411793, b: 0.029411793, a: 1}
-      data:
-        first:
-          name: _paintColor2
-        second: {r: 1, g: 1, b: 1, a: 1}
-      data:
-        first:
-          name: _flakeLayerColor
-        second: {r: 1, g: 1, b: 1, a: 1}
-      data:
-        first:
-          name: _Color2
-        second: {r: 1, g: 1, b: 1, a: 1}
-      data:
-        first:
-          name: _BonusAmbient
-        second: {r: 0, g: 0, b: 0, a: 1}
+    - first:
+        name: _BonusAmbient
+      second: {r: 0, g: 0, b: 0, a: 1}
+    - first:
+        name: _Color
+      second: {r: 0.3000649, g: 0.5441177, b: 0.30859822, a: 1}
+    - first:
+        name: _Color2
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _ReflectColor
+      second: {r: 0.029411793, g: 0.029411793, b: 0.029411793, a: 1}
+    - first:
+        name: _SpecColor
+      second: {r: 0.9338235, g: 0.9338235, b: 0.9338235, a: 1}
+    - first:
+        name: _flakeLayerColor
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _paintColor2
+      second: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1002 &2100001
 EditorExtensionImpl:
   serializedVersion: 6
