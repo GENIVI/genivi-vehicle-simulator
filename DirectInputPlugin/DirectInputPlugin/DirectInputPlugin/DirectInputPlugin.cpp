@@ -32,6 +32,8 @@ BOOL CALLBACK EnumDevicesCallback(const LPCDIDEVICEINSTANCE lpDeviceInstance, LP
 
 	// store some info about this device
 	DEVICE device;
+	ZeroMemory(&device, sizeof(device));
+
 	device.deviceInterface = currentDevice;
 	_tcscpy_s(device.productName, _countof(device.productName), lpDeviceInstance->tszProductName);
 
@@ -206,6 +208,10 @@ extern "C" __declspec(dllexport) long __stdcall PlaySpringForce(int device, int 
 	eff.lpvTypeSpecificParams = &params;
 
 	HRESULT hr;
+	if (!allDevices[device].springForce) {
+		return DIERR_UNSUPPORTED;
+	}
+
 	hr = allDevices[device].springForce->SetParameters(&eff, DIEP_TYPESPECIFICPARAMS | DIEP_START);
 	// Now set the new parameters and start the effect immediately.
 	if (FAILED(hr)) {
@@ -233,7 +239,7 @@ extern "C" __declspec(dllexport) long __stdcall PlaySpringForce(int device, int 
 }
 
 extern "C" __declspec(dllexport) bool __stdcall StopSpringForce(int device) {
-	if (device >= allDevices.size()) {
+	if (device >= allDevices.size() || !allDevices[device].springForce) {
 		return false;
 	}
 
@@ -247,6 +253,10 @@ extern "C" __declspec(dllexport) bool __stdcall StopSpringForce(int device) {
 extern "C" __declspec(dllexport) long __stdcall PlayDamperForce(int device, int coefficient) {
 	if (device >= allDevices.size()) {
 		return ERROR_BAD_DEVICE_PATH;
+	}
+
+	if (!allDevices[device].damperForce) {
+		return DIERR_UNSUPPORTED;
 	}
 
 	DICONDITION params;
@@ -292,7 +302,7 @@ extern "C" __declspec(dllexport) long __stdcall PlayDamperForce(int device, int 
 }
 
 extern "C" __declspec(dllexport) bool __stdcall StopDamperForce(int device) {
-	if (device >= allDevices.size()) {
+	if (device >= allDevices.size() || !allDevices[device].damperForce) {
 		return false;
 	}
 
@@ -306,6 +316,9 @@ extern "C" __declspec(dllexport) long __stdcall PlayConstantForce(int device, in
 	if (device >= allDevices.size()) {
 		return ERROR_BAD_DEVICE_PATH;
 	}
+	if (!allDevices[device].constantForce) {
+		return DIERR_UNSUPPORTED;
+	}
 
 	DICONSTANTFORCE params;
 	params.lMagnitude = force;
@@ -317,6 +330,7 @@ extern "C" __declspec(dllexport) long __stdcall PlayConstantForce(int device, in
 	eff.lpvTypeSpecificParams = &params;
 
 	HRESULT hr;
+
 	hr = allDevices[device].constantForce->SetParameters(&eff, DIEP_TYPESPECIFICPARAMS | DIEP_START);
 	// Now set the new parameters and start the effect immediately.
 	if (FAILED(hr)) {
@@ -348,6 +362,9 @@ extern "C" __declspec(dllexport) long __stdcall UpdateConstantForce(int device, 
 	if (device >= allDevices.size()) {
 		return ERROR_BAD_DEVICE_PATH;
 	}
+	if (!allDevices[device].constantForce) {
+		return DIERR_UNSUPPORTED;
+	}
 
 	DICONSTANTFORCE params;
 	params.lMagnitude = force;
@@ -368,7 +385,7 @@ extern "C" __declspec(dllexport) long __stdcall UpdateConstantForce(int device, 
 }
 
 extern "C" __declspec(dllexport) bool __stdcall StopConstantForce(int device) {
-	if (device >= allDevices.size()) {
+	if (device >= allDevices.size() || !allDevices[device].constantForce) {
 		return false;
 	}
 
