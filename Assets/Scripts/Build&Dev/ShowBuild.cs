@@ -24,16 +24,20 @@ public class ShowBuild : MonoBehaviour {
          var getHistory = assetServer.GetMethod("GetHistory", System.Type.EmptyTypes);
          object[] changes = getHistory.Invoke(null, null) as object[];
          int buildNum = (int)changeSet.GetField("changeset").GetValue(changes[0]);
-         
+
         return buildNum;
     }
 
     public static string GetGitBuildNumber()
     {
-        //TODO: handle building from other branches?
-        string hash = File.ReadAllText(".git/refs/heads/master");
+        string hash;
+        try {
+            hash = File.ReadAllText(".git/HEAD");
+        } catch (IOException e) {
+            hash = "Unknown";
+        }
 
-        string timestamp = System.DateTime.Now.ToString("yyyymmdd");
+        string timestamp = System.DateTime.Now.ToString("yyyymmddHHmm");
 
         return timestamp + "_" + hash.Substring(0, 6);
     }
@@ -45,7 +49,7 @@ public class ShowBuild : MonoBehaviour {
         #if UNITY_EDITOR
                 return "DEV";
         #else
-                    return File.ReadAllText(Application.dataPath + Path.DirectorySeparatorChar + "build_type");  
+                    return File.ReadAllText(Application.dataPath + Path.DirectorySeparatorChar + "build_type");
         #endif
     }
 
@@ -65,18 +69,18 @@ public class ShowBuild : MonoBehaviour {
         #if UNITY_EDITOR
             //pull straight from asset server if we are in the editor
             buildNumber = GetBuildNumber();
-          
+
             buildType = "";
         #else
             //otherwise grab the number that was added during build postprocessing
             string build = File.ReadAllText(Application.dataPath + Path.DirectorySeparatorChar + "build");
-            string type = File.ReadAllText(Application.dataPath + Path.DirectorySeparatorChar + "build_type");    
+            string type = File.ReadAllText(Application.dataPath + Path.DirectorySeparatorChar + "build_type");
             buildNumber = build;
             buildType = type;
-            
+
         #endif
     }
-    
+
 
     void Start()
     {
