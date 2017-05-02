@@ -10,18 +10,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 
-public class DataPoint<T> {
-	public string signalName;
-	public float timestamp;
-	public T value;
-	
-	public DataPoint(string signal, float time, T value) {
-		signalName = signal;
-		timestamp = time;
-		this.value = value;
-	}
-}
-
 public struct FullDataFrame
 {
     public float time;
@@ -58,7 +46,7 @@ public struct FullDataFrame
                 "WheelSpeedReL, {13:F4}, {0}\n" +
                 "WheelSpeedReR, {14:F4}, {0}\n" +
                 "YawRate, {15:F4}, {0}\n", time, cruiseSpeed, rpm, gearPosActual, gearPosTarget, accelleratorPos, deceleratorPos, rollRate, steeringWheelAngle, vehicleSpeed, vehicleSpeedOverGround, wheelSpeedFL, wheelSpeedFR, wheelSpeedRL, wheelSpeedRR, yawRate);
-            
+
     }
 
     public string ToICCSV()
@@ -71,10 +59,6 @@ public struct FullDataFrame
 
 [StructLayout(LayoutKind.Sequential)]
 public class CANDataCollector : MonoBehaviour {
-
-	private List<DataPoint<int>> intData;
-	private List<DataPoint<float>>	floatData;
-	
 	private Rigidbody rb;
 	private VehicleController vehicleController;
 
@@ -93,18 +77,9 @@ public class CANDataCollector : MonoBehaviour {
         dataStream = DataStreamServer.Instance;
         lastYaw = transform.localRotation.eulerAngles.y;
         lastRoll = transform.localRotation.eulerAngles.z;
-        
 	}
-
-	void OnEnable() {
-		intData = new List<DataPoint<int>>();
-		floatData = new List<DataPoint<float>>();
-	}
-
-
 
     void Update() {
-
         float yaw = (transform.localRotation.eulerAngles.y - lastYaw) / Time.deltaTime;
         float roll = (transform.localRotation.eulerAngles.z - lastRoll) / Time.deltaTime;
         lastRoll = transform.localRotation.eulerAngles.z;
@@ -115,55 +90,21 @@ public class CANDataCollector : MonoBehaviour {
 
         float time = Time.time;
 
-       
-
-        //EngineSpeed
-        floatData.Add(new DataPoint<float>("EngineSpeed", time, vehicleController.RPM));
-
         //GearPosActual
         int gear = vehicleController.IsShifting ? -3 : vehicleController.Gear;
-        intData.Add(new DataPoint<int>("GearPosActual", time, gear));
-
-        //GearPosTarget
-        intData.Add(new DataPoint<int>("GearPosTarget", time, vehicleController.Gear));
 
         //AcceleratorPedalPos
         int pedalPos = Mathf.RoundToInt(Mathf.Clamp01(vehicleController.accellInput) * 100);
-        intData.Add(new DataPoint<int>("AcceleratorPedalPos", time, pedalPos));
 
         //DeceleratorPedalPos
         int brakePos = Mathf.RoundToInt(Mathf.Clamp(-1, 0, vehicleController.accellInput) * 100);
-        intData.Add(new DataPoint<int>("DeceleratorPedalPos", time, brakePos));
-
-        //RollRate
-        //TODO
 
         //SteeringWheelAngle
         int wheelAngle = Mathf.RoundToInt(vehicleController.steerInput * 720);
-        intData.Add(new DataPoint<int>("SteeringWheelAngle", time, wheelAngle));
 
         //VehicleSpeed
         float kmh = rb.velocity.magnitude * 3.6f;
-        floatData.Add(new DataPoint<float>("VehicleSpeed", time, kmh));
         //TODO: calculate this from wheel rpm
-
-        //VehicleSpeedOverGnd
-        floatData.Add(new DataPoint<float>("VehicleSpeedOverGnd", time, kmh));
-
-        //WheelSpeedFrL
-        floatData.Add(new DataPoint<float>("WheelSpeedFrL", time, vehicleController.WheelFL.rpm * 60));
-
-        //WheelSpeedFrR
-        floatData.Add(new DataPoint<float>("WheelSpeedFrR", time, vehicleController.WheelFR.rpm * 60));
-
-        //WheelSpeedReL
-        floatData.Add(new DataPoint<float>("WheelSpeedReL", time, vehicleController.WheelRL.rpm * 60));
-
-        //WheelSpeedReR
-        floatData.Add(new DataPoint<float>("WheelSpeedReR", time, vehicleController.WheelRR.rpm * 60));
-
-        //YawRate
-        //TODO
 
         FullDataFrame frame = new FullDataFrame()
         {
