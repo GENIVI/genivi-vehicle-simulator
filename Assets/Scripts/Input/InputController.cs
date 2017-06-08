@@ -65,6 +65,9 @@ public abstract class InputController : MonoBehaviour
         CTRL_NUMERIC_7,
         CTRL_NUMERIC_8,
         CTRL_NUMERIC_9,
+        DATA_STREAM_EVENT1,
+        DATA_STREAM_EVENT2,
+        DATA_STREAM_EVENT3,
     };
 
     private Dictionary<EventType, System.Func<System.Action>> events;
@@ -122,7 +125,10 @@ public abstract class InputController : MonoBehaviour
                 {EventType.CTRL_NUMERIC_6, () => ControlNumeric6 },
                 {EventType.CTRL_NUMERIC_7, () => ControlNumeric7 },
                 {EventType.CTRL_NUMERIC_8, () => ControlNumeric8 },
-                {EventType.CTRL_NUMERIC_9, () => ControlNumeric9 }
+                {EventType.CTRL_NUMERIC_9, () => ControlNumeric9 },
+                {EventType.DATA_STREAM_EVENT1, () => DataStreamEvent1 },
+                {EventType.DATA_STREAM_EVENT2, () => DataStreamEvent2 },
+                {EventType.DATA_STREAM_EVENT3, () => DataStreamEvent3 },
         };
     }
 
@@ -187,6 +193,9 @@ public abstract class InputController : MonoBehaviour
     public event System.Action ControlNumeric7;
     public event System.Action ControlNumeric8;
     public event System.Action ControlNumeric9;
+    public event System.Action DataStreamEvent1;
+    public event System.Action DataStreamEvent2;
+    public event System.Action DataStreamEvent3;
 #pragma warning restore 0067
 
     //continuous input

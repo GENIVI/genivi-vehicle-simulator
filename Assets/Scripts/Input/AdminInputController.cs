@@ -43,7 +43,10 @@ public class AdminInputController : InputController
         {KeyCode.A, EventType.SELECT_ENVIRONMENT_1},
         {KeyCode.B, EventType.SELECT_ENVIRONMENT_2},
         {KeyCode.R, EventType.SELECT_ROAD_RIGHT},
-        {KeyCode.L, EventType.SELECT_ROAD_LEFT}
+        {KeyCode.L, EventType.SELECT_ROAD_LEFT},
+        {KeyCode.F10, EventType.DATA_STREAM_EVENT1 },
+        { KeyCode.F11, EventType.DATA_STREAM_EVENT2  },
+        {KeyCode.F12, EventType.DATA_STREAM_EVENT3 }
 
     };
 

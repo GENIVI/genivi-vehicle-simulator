@@ -29,22 +29,24 @@ namespace StreamListener
         private static bool isWaiting = false;
         private static byte[] buffer;
 
-        public static void Awake()
+        public static void Awake(int port)
         {
             tcpServer = new Socket(AddressFamily.InterNetwork,
             SocketType.Stream, ProtocolType.Tcp);
-            tcpServer.Bind(new IPEndPoint(IPAddress.Any, 9000));
+            
+            tcpServer.Bind(new IPEndPoint(IPAddress.Any, port));
             isConnected = false;
             tcpServer.Listen(100);
             buffer = new byte[messageLen];
             tcpServer.BeginAccept(new AsyncCallback(AcceptCallback), tcpServer);
+            Console.WriteLine("listening on port " + port);
         }
 
         static void AcceptCallback(System.IAsyncResult ar)
         {
             Socket listener = (Socket)ar.AsyncState;
+            
             Socket handler = listener.EndAccept(ar);
-
             connectedClient = handler;
             isConnected = true;
         }
@@ -91,7 +93,9 @@ namespace StreamListener
                     */
                 }
             }
-            catch { }
+            catch(Exception e) {
+                Console.Error.WriteLine("ERR" );
+            }
             finally
             {
                 isWaiting = false;
@@ -107,12 +111,17 @@ namespace StreamListener
 
     static void Main(string[] args)
         {
-        Awake();
-        while(true)
+            int port = 9000;
+            if(args.Length > 0)
             {
-                Update();
+                port = int.Parse(args[0]);
             }
-            OnDestroy();
-        }
+            Awake(port);
+            while(true)
+                {
+                    Update();
+                }
+                OnDestroy();
+            }
     }
 }

@@ -28,10 +28,13 @@ public struct FullDataFrame
     public float wheelSpeedRL;
     public float wheelSpeedRR;
     public float yawRate;
+    public float triggeredEvent1TimeStamp;
+    public float triggeredEvent2TimeStamp;
+    public float triggeredEvent3TimeStamp;
 
     public string ToCSV()
     {
-        return string.Format("EMSSetSpeed, {1:F4}, {0}\n" +
+        string data = string.Format("EMSSetSpeed, {1:F4}, {0}\n" +
                 "EngineSpeed, {2:F4}, {0}\n" +
                 "GearPosActual, {3:N}, {0}\n" +
                 "GearPosTarget, {4:N}, {0}\n" +
@@ -47,6 +50,24 @@ public struct FullDataFrame
                 "WheelSpeedReR, {14:F4}, {0}\n" +
                 "YawRate, {15:F4}, {0}\n", time, cruiseSpeed, rpm, gearPosActual, gearPosTarget, accelleratorPos, deceleratorPos, rollRate, steeringWheelAngle, vehicleSpeed, vehicleSpeedOverGround, wheelSpeedFL, wheelSpeedFR, wheelSpeedRL, wheelSpeedRR, yawRate);
 
+        //TODO: handle this better
+        if (triggeredEvent1TimeStamp > 0f)
+        {
+            data += string.Format("TriggeredEvent1, 0.0, {0}\n", triggeredEvent1TimeStamp);
+        }
+
+        if (triggeredEvent2TimeStamp > 0f)
+        {
+            data += string.Format("TriggeredEvent2, 0.0, {0}\n", triggeredEvent2TimeStamp);
+        }
+
+        if (triggeredEvent3TimeStamp > 0f)
+        {
+            data += string.Format("TriggeredEvent3, 0.0, {0}\n", triggeredEvent3TimeStamp);
+        }
+
+        return data;
+          
     }
 
     public string ToICCSV()
@@ -54,6 +75,34 @@ public struct FullDataFrame
         return string.Format(
             "EngineSpeed, {1:F4}, {0}\n" +
             "VehicleSpeed, {2:F4}, {0}\n", time, rpm, vehicleSpeed);
+    }
+}
+
+public struct TriggeredEventFrame
+{
+
+    public float triggeredEvent1TimeStamp;
+    public float triggeredEvent2TimeStamp;
+    public float triggeredEvent3TimeStamp;
+
+    public string ToCSV()
+    {
+        string data = "";
+        if (triggeredEvent1TimeStamp > 0f)
+        {
+            data += string.Format("TriggeredEvent1, 0.0, {0}\n", triggeredEvent1TimeStamp);
+        }
+
+        if (triggeredEvent2TimeStamp > 0f)
+        {
+            data += string.Format("TriggeredEvent2, 0.0, {0}\n", triggeredEvent2TimeStamp);
+        }
+
+        if (triggeredEvent3TimeStamp > 0f)
+        {
+            data += string.Format("TriggeredEvent3, 0.0, {0}\n", triggeredEvent3TimeStamp);
+        }
+        return data;
     }
 }
 
@@ -71,6 +120,10 @@ public class CANDataCollector : MonoBehaviour {
     private float lastYaw = 0f;
     private float lastRoll = 0f;
 
+    private float triggerTimeStamp1 = 0f;
+    private float triggerTimeStamp2 = 0f;
+    private float triggerTimeStamp3 = 0f;
+
     void Awake() {
 		rb = GetComponent<Rigidbody>();
 		vehicleController = GetComponent<VehicleController>();
@@ -78,6 +131,38 @@ public class CANDataCollector : MonoBehaviour {
         lastYaw = transform.localRotation.eulerAngles.y;
         lastRoll = transform.localRotation.eulerAngles.z;
 	}
+
+    private void OnEnable()
+    {
+        AppController.Instance.AdminInput.DataStreamEvent1 += OnTriggerEvent1;
+        AppController.Instance.AdminInput.DataStreamEvent2 += OnTriggerEvent2;
+        AppController.Instance.AdminInput.DataStreamEvent3 += OnTriggerEvent3;
+    }
+
+    private void OnDisable()
+    {
+        if(AppController.IsInstantiated && AppController.Instance.AdminInput != null)
+        {
+            AppController.Instance.AdminInput.DataStreamEvent1 -= OnTriggerEvent1;
+            AppController.Instance.AdminInput.DataStreamEvent2 -= OnTriggerEvent2;
+            AppController.Instance.AdminInput.DataStreamEvent3 -= OnTriggerEvent3;
+        }
+    }
+
+    void OnTriggerEvent1()
+    {
+        triggerTimeStamp1 = Time.time;
+    }
+
+    void OnTriggerEvent2()
+    {
+        triggerTimeStamp2 = Time.time;
+    }
+
+    void OnTriggerEvent3()
+    {
+        triggerTimeStamp3 = Time.time;
+    }
 
     void Update() {
         float yaw = (transform.localRotation.eulerAngles.y - lastYaw) / Time.deltaTime;
@@ -123,8 +208,40 @@ public class CANDataCollector : MonoBehaviour {
             wheelSpeedFR = vehicleController.WheelFR.rpm * 60,
             wheelSpeedRL = vehicleController.WheelRL.rpm * 60,
             wheelSpeedRR = vehicleController.WheelRR.rpm * 60,
-            yawRate = yaw
+            yawRate = yaw,
+            triggeredEvent1TimeStamp = 0f
         };
+
+        if(triggerTimeStamp1 > 0f || triggerTimeStamp2 > 0f || triggerTimeStamp3 > 0f)
+        {
+            TriggeredEventFrame eventFrame = new TriggeredEventFrame()
+            {
+                triggeredEvent1TimeStamp = triggerTimeStamp1,
+                triggeredEvent2TimeStamp = triggerTimeStamp2,
+                triggeredEvent3TimeStamp = triggerTimeStamp3
+            };
+
+            dataStream.SendAsText(eventFrame);
+        }
+
+        //add triggered events if required
+        if(triggerTimeStamp1 > 0f)
+        {
+            frame.triggeredEvent1TimeStamp = triggerTimeStamp1;
+            triggerTimeStamp1 = 0f;
+        }
+        if (triggerTimeStamp2 > 0f)
+        {
+            frame.triggeredEvent2TimeStamp = triggerTimeStamp2;
+            triggerTimeStamp2 = 0f;
+        }
+        if (triggerTimeStamp3 > 0f)
+        {
+            frame.triggeredEvent3TimeStamp = triggerTimeStamp3;
+            triggerTimeStamp3 = 0f;
+        }
+
+
 
         dataStream.SendAsText(frame);
     }

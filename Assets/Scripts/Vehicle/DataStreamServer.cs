@@ -18,13 +18,15 @@ using System;
 public class ConnectionData
 {
     public Socket client;
-    public bool IC;
+    public bool IC = false;
+    public bool events = false;
 }
 
 public class DataStreamServer : PersistentUnitySingleton<DataStreamServer> {
 
     public const int PORT = 9001;
     public const int ALTPORT = 9000;
+    public const int EVENTPORT = 9002;
     private static string recievedData;
     private static int messageLen = 4 + (4 * 15);
 
@@ -37,10 +39,14 @@ public class DataStreamServer : PersistentUnitySingleton<DataStreamServer> {
         connections = new List<ConnectionData>();
         var dbEndpoint = new IPEndPoint(IPAddress.Parse(NetworkController.settings.clientIp), PORT);
         var altEndpoint = new IPEndPoint(IPAddress.Parse(NetworkController.settings.altClientIP), ALTPORT);
+        var eventEndpoint = new IPEndPoint(IPAddress.Parse(NetworkController.settings.eventClientIP), EVENTPORT);
+
         var dbClient = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
         var altClient = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-        dbClient.BeginConnect(dbEndpoint, new AsyncCallback(ConnectCallback), new ConnectionData() { client = dbClient, IC = true });
-        altClient.BeginConnect(altEndpoint, new AsyncCallback(ConnectCallback), new ConnectionData() { client = altClient, IC = false });
+        var eventClient = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+        dbClient.BeginConnect(dbEndpoint, new AsyncCallback(ConnectCallback), new ConnectionData() { client = dbClient, IC = true, events = false });
+        altClient.BeginConnect(altEndpoint, new AsyncCallback(ConnectCallback), new ConnectionData() { client = altClient, IC = false, events = false });
+        eventClient.BeginConnect(eventEndpoint, new AsyncCallback(ConnectCallback), new ConnectionData() { client = eventClient, IC = false, events = true });
 
 
     }
@@ -135,16 +141,40 @@ public class DataStreamServer : PersistentUnitySingleton<DataStreamServer> {
     {
         foreach (var connection in connections)
         {
-            byte[] data;
-            if(connection.IC)
+            if (connection != null)
             {
-                data = Encoding.ASCII.GetBytes(frame.ToICCSV());
-            } else
-            {
-                data = Encoding.ASCII.GetBytes(frame.ToCSV());
+                byte[] data;
+                if (connection.IC)
+                {
+                    data = Encoding.ASCII.GetBytes(frame.ToICCSV());
+                    SendTCP(data, connection.client);
+                }
+                else if (connection.events)
+                {
+                    //do nothing here, event frames sent on their own   
+                }
+                else
+                {
+                    data = Encoding.ASCII.GetBytes(frame.ToCSV());
+                    SendTCP(data, connection.client);
+                }
             }
-            SendTCP(data, connection.client);
+            
         }
     }
+
+    public void SendAsText(TriggeredEventFrame frame)
+    {
+        foreach (var connection in connections)
+        {
+            if (connection != null && connection.events)
+            {
+                byte[] data;
+                data = Encoding.ASCII.GetBytes(frame.ToCSV());
+                SendTCP(data, connection.client);
+            }
+        }
+    }
+    
 
 }

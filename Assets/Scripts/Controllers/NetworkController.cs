@@ -16,6 +16,7 @@ public class NetworkSettings
     public string hostIp;
     public string clientIp;
     public string altClientIP;
+    public string eventClientIP;
 
     public NetworkSettings()
     {
@@ -24,6 +25,7 @@ public class NetworkSettings
         //altClientIP = "127.0.0.1";
         hostIp = "192.168.16.129";
         clientIp = "192.168.16.128";
+        eventClientIP = "127.0.0.1";
         altClientIP = "192.168.16.85";
 
     }
