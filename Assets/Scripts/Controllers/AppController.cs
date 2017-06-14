@@ -40,6 +40,11 @@ public class AppController : PersistentUnitySingleton<AppController>
 
     public SessionSettings currentSessionSettings = new SessionSettings();
 
+    private AsyncOperation sceneLoader = null;
+    private static Texture2D loadScrim;
+    private static Texture2D loadProgressFull;
+    private static Texture2D loadProgressEmpty;
+
     protected override void Awake()
     {
         base.Awake();
@@ -94,6 +99,31 @@ public class AppController : PersistentUnitySingleton<AppController>
         AdminInput.SwapInputMethod += SwapInputMethod;
     }
 
+    public void DrawLoadProgress() {
+        float xPos = (float)(Screen.width * 0.5) - 50;
+        float yPos = (float)(Screen.height * 0.5) - 25;
+        if (loadScrim == null) {
+            loadScrim = new Texture2D(1, 1);
+            loadScrim.SetPixel(0, 0, new Color(0f, 0f, 0f, 0.5f));
+            loadScrim.Apply();
+        }
+        if (loadProgressFull == null) {
+            loadProgressFull = new Texture2D(1, 1);
+            loadProgressFull.SetPixel(0, 0, Color.blue);
+            loadProgressFull.Apply();
+        }
+        if (loadProgressEmpty == null) {
+            loadProgressEmpty = new Texture2D(1, 1);
+            loadProgressEmpty.SetPixel(0, 0, Color.red);
+            loadProgressEmpty.Apply();
+        }
+        GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), loadScrim);
+        GUI.DrawTexture(new Rect(xPos, yPos, 100, 50), loadProgressEmpty);
+        GUI.DrawTexture(new Rect(xPos, yPos, 100 * sceneLoader.progress, 50), loadProgressFull);
+        GUI.color = Color.black;
+        GUI.Label(new Rect(xPos + 20, yPos + 10, 300, 400), "LOADING...");
+    }
+
     public void OnGUI()
     {
         if (swappedInputAt > 0f && Time.time < swappedInputAt + 4f)
@@ -102,7 +132,9 @@ public class AppController : PersistentUnitySingleton<AppController>
             GUI.Label(new Rect(200, 10, 300, 400), "INPUT: " + inputMethod);
             GUI.color = Color.white;
         }
-
+        if (sceneLoader != null && sceneLoader.progress < 1.0) {
+            DrawLoadProgress();
+        }
     }
 
     private float swappedInputAt = 0f;
@@ -116,33 +148,33 @@ public class AppController : PersistentUnitySingleton<AppController>
 
         swappedInputAt = Time.time;
         inputMethod = UserInput.gameObject.name;
-        
+
     }
 
 #pragma warning disable 0618
     public void LoadEnvironmentSelect()
     {
-        Application.LoadLevel(appSettings.environmentSelectScene);
+        sceneLoader = Application.LoadLevelAsync(appSettings.environmentSelectScene);
     }
 
     public void LoadCarSelect()
     {
-        Application.LoadLevel(appSettings.carSelectScene);
+        sceneLoader = Application.LoadLevelAsync(appSettings.carSelectScene);
     }
 
     public void LoadRoadSideSelect()
     {
-        Application.LoadLevel(appSettings.roadSideSelectScene);
+        sceneLoader = Application.LoadLevelAsync(appSettings.roadSideSelectScene);
     }
 
     public void LoadBrandSelect()
     {
-        Application.LoadLevel(appSettings.brandSelectScene);
+        sceneLoader = Application.LoadLevelAsync(appSettings.brandSelectScene);
     }
 
     public void LoadDrivingScene(string sceneName)
     {
-        Application.LoadLevel(sceneName);
+        sceneLoader = Application.LoadLevelAsync(sceneName);
     }
 
     public void LoadDrivingScene(Environment environment)
@@ -159,7 +191,7 @@ public class AppController : PersistentUnitySingleton<AppController>
                 LoadDrivingScene(appSettings.coastalDrivingScene);
                 break;
         }
-        
+
     }
 
     public AsyncOperation LoadDrivingSceneAdditive(Environment environment)
@@ -167,15 +199,19 @@ public class AppController : PersistentUnitySingleton<AppController>
         switch(environment)
         {
             case Environment.SCENIC:
-                return Application.LoadLevelAdditiveAsync(appSettings.scenicDrivingScene);
+                sceneLoader = Application.LoadLevelAdditiveAsync(appSettings.scenicDrivingScene);
+                break;
             case Environment.URBAN:
-                return Application.LoadLevelAdditiveAsync(appSettings.urbanDrivingScene);
+                sceneLoader = Application.LoadLevelAdditiveAsync(appSettings.urbanDrivingScene);
+                break;
             case Environment.COASTAL:
-                return Application.LoadLevelAdditiveAsync(appSettings.coastalDrivingScene);
+                sceneLoader = Application.LoadLevelAdditiveAsync(appSettings.coastalDrivingScene);
+                break;
             default:
-                return Application.LoadLevelAdditiveAsync(appSettings.coastalDrivingScene);
+                sceneLoader = Application.LoadLevelAdditiveAsync(appSettings.coastalDrivingScene);
+                break;
         }
-
+        return sceneLoader;
     }
 
     public AsyncOperation LoadDrivingSceneAsync(Environment environment)
@@ -183,15 +219,21 @@ public class AppController : PersistentUnitySingleton<AppController>
         switch (environment)
         {
             case Environment.SCENIC:
-                return Application.LoadLevelAsync(appSettings.scenicDrivingScene);
+                sceneLoader = Application.LoadLevelAsync(appSettings.scenicDrivingScene);
+                break;
             case Environment.URBAN:
-                return Application.LoadLevelAsync(appSettings.urbanDrivingScene);
+                sceneLoader = Application.LoadLevelAsync(appSettings.urbanDrivingScene);
+                break;
             case Environment.COASTAL:
-                return Application.LoadLevelAsync(appSettings.coastalDrivingScene);
+                sceneLoader = Application.LoadLevelAsync(appSettings.coastalDrivingScene);
+                break;
             default:
-                return Application.LoadLevelAsync(appSettings.coastalDrivingScene);
+                sceneLoader = Application.LoadLevelAsync(appSettings.coastalDrivingScene);
+                break;
         }
+        return sceneLoader;
     }
+
 #pragma warning restore 0618
     public bool IsProduction()
     {
